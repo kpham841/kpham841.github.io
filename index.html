@@ -19,6 +19,7 @@
 
 <body>
     <header>
+        <!-- NAVBAR -->
         <nav class="nav-bar">
             <div class="nav-links">
                 <a href="#Home" class="nav-link" id="welcome">Home</a>
@@ -31,6 +32,7 @@
 
 
 
+    <!-- HOME -->
     <section class="s1" id="Home">
         <div class="main-containerHome">
             <div class="home-main">
@@ -66,13 +68,14 @@
     </section>
 
 
+    <!-- ABOUT -->
     <section class="s2" id="About">
         <div class="main-container">
             <div class="about-main">
                 <h1>About</h1>
             </div>
             <div class="about-p">
-                <p>My name is Khiem Pham. I am a third-year Cognitive Science w/ Specialization in Design and
+                <p>I'm a third-year Cognitive Science w/ Specialization in Design and
                     Interaction major with a Computer Science minor at the University of California, San Diego.
                     I'm interested in web and software development, as well as UI/UX.
                 </p>
@@ -81,85 +84,108 @@
     </section>
 
 
+    <!-- PROJECTS -->
     <section class="s1" id="Projects">
-        <div class="main-container">
+        <div class="main-containerProj">
             <div class="portfolio-main">
                 <h1>Projects</h1>
             </div>
             <div class="grid-container">
                 <div class="grid-item">
-                    <a
-                        href="https://discord.com/api/oauth2/authorize?client_id=722306796483641366&permissions=8&scope=bot"><img
-                            src="images/mayuri_chibi.png" alt="Mayuri Chibi"></a>
+                    <div class="grid-img">
+                        <img src="images/mayuri_chibi.png" alt="Mayuri Chibi"></a>
+                    </div>
+
+                    <div class="grid-txt">
+                        <h2>MBot</h2>
+                        <p> A multi-purpose discord bot with administrative commands, mini-games, currency system, xp
+                            system, and meme generator.</p>
+                        <br>
+                        <p><b>Technologies Used:</b> Node.js, MongoDB, Heroku</p>
+                        <br>
+                        <button class="button2"><a
+                                href="https://discord.com/api/oauth2/authorize?client_id=722306796483641366&permissions=8&scope=bot">Invite
+                            </a></button>
+                    </div>
                 </div>
 
                 <div class="grid-item">
-                    <h2>MBot</h2>
-                    <p> A multi-purpose discord bot with administrative commands, mini-games, currency system, xp
-                        system, and meme generator.</p>
-                    <br>
-                    <p><b>Technologies Used:</b> Node.js, MongoDB, Heroku</p>
+                    <div class="grid-img">
+                        <img src="images/healthez.png" alt="Healthez"></a>
+                    </div>
+                    <div class="grid-txt">
+                        <h2>Healthez</h2>
+                        <p> A website that allows people to search up food products and view their nutritional
+                            information.
+                        </p>
+                        <br>
+                        <p> Developed front‐end components (buttons, pages, info containers) to interact with
+                            spoonacular
+                            API.</p>
+                        <br>
+                        <p><b>Technologies Used:</b> JavaScript, HTML/CSS, Django, Python</p>
+                        <button class="button2"><a href="https://devpost.com/software/healthez">Details
+                            </a></button>
+                    </div>
                 </div>
 
                 <div class="grid-item">
-                    <a href="https://devpost.com/software/healthez"><img src="images/healthez.png" alt="Healthez"></a>
+                    <div class="grid-img">
+                        <img src="images/unimeet.png" alt="UniMeet"></a>
+                    </div>
+
+                    <div class="grid-txt">
+                        <h2>UniMeet</h2>
+                        <p>A website that allows university students to meet‐up with other students through similar
+                            interests.
+                        </p>
+                        <br>
+                        <p> Developed front‐end components (buttons, pages, inputs) to interact with user data stored in
+                            Firebase.</p>
+                        <br>
+                        <p><b>Technologies Used:</b> React, HTML/CSS, JavaScript, Firebase, Python</p>
+                        <button class="button2"><a href="https://devpost.com/software/unimeet-3e7p2m">Details
+                            </a></button>
+                    </div>
                 </div>
 
                 <div class="grid-item">
-                    <h2>Healthez</h2>
-                    <p> A website that allows people to search up food products and view their nutritional information.
-                    </p>
-                    <br>
-                    <p> Developed front‐end components (buttons, pages, info containers) to interact with spoonacular API.</p>
-                    <br>
-                    <p><b>Technologies Used:</b> JavaScript, HTML/CSS, Django, Python</p>
+                    <div class="grid-img">
+                        <img src="images/passwordgen.png" alt="passwordgen" width="10px" height="10px"></a>
+                    </div>
+
+                    <div class="grid-txt">
+                        <h2>Password Generator</h2>
+                        <p> Generates a random password based on a certain criteria.</p>
+                        <p> Used useState hook to update state components. </p>
+                        <p> Created to learn the basics of React.</p>
+                        <br>
+                        <p><b>Technologies Used:</b> React, HTML/CSS</p>
+                        <button class="button2"><a href="https://kpham841.github.io/random_password_generator/">Demo
+                            </a></button>
+                    </div>
                 </div>
 
                 <div class="grid-item">
-                    <a href="https://devpost.com/software/unimeet-3e7p2m"><img src="images/unimeet.png"
-                            alt="UniMeet"></a>
-                </div>
+                    <div class="grid-img">
+                        <img src="images/calc.png" alt="Calc"></a>
+                    </div>
 
-                <div class="grid-item">
-                    <h2>UniMeet</h2>
-                    <p>A website that allows university students to meet‐up with other students through similar
-                        interests.
-                    </p>
-                    <br>
-                    <p> Developed front‐end components (buttons, pages, inputs) to interact with user data stored in Firebase.</p>
-                    <br>
-                    <p><b>Technologies Used:</b> React, HTML/CSS, JavaScript, Firebase, Python</p>
-                </div>
-
-                <div class="grid-item">
-                    <a href="https://kpham841.github.io/random_password_generator/"><img src="images/passwordgen.png"
-                            alt="passwordgen" width="10px" height="10px"></a>
-                </div>
-
-                <div class="grid-item">
-                    <h2>Password Generator</h2>
-                    <p> Generates a random password based on a certain criteria.</p>
-                    <p> Used useState hook to update state components. </p>
-                    <p> Created to learn the basics of React.</p>
-                    <br>
-                    <p><b>Technologies Used:</b> React, HTML/CSS</p>
-                </div>
-
-                <div class="grid-item">
-                    <a href="https://kpham841.github.io/Calculator-JS/"><img src="images/calc.png" alt="Calc"></a>
-                </div>
-
-                <div class="grid-item">
-                    <h2>Calculator</h2>
-                    <p> A calculator that can perform basic arithmetic operations.</p>
-                    <p> Created to learn the basics of JavaScript, HTML, and CSS.</p>
-                    <br>
-                    <p><b>Technologies Used:</b> JavaScript, HTML, CSS</p>
+                    <div class="grid-txt">
+                        <h2>Calculator</h2>
+                        <p> A calculator that can perform basic arithmetic operations.</p>
+                        <p> Created to learn the basics of JavaScript, HTML, and CSS.</p>
+                        <br>
+                        <p><b>Technologies Used:</b> JavaScript, HTML, CSS</p>
+                        <button class="button2"><a href="https://kpham841.github.io/Calculator-JS/">Demo
+                            </a></button>
+                    </div>
                 </div>
 
     </section>
 
 
+    <!-- TECHNOLOGIES -->
     <section class="s2" id="Technologies">
         <div class="main-container">
             <div class="technology-main">
