@@ -12,6 +12,11 @@
 
 /*===== BASE =====*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
     padding: 0;
@@ -122,7 +127,18 @@ a {
 }
 
 .main-containerHome {
-    padding-left: 25%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+
+.intros {
+    position: relative;
+    bottom: 80px;
+    margin: 200px 50px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-container {
@@ -137,13 +153,6 @@ a {
     margin: 0 auto;
     padding-top: 125px;
     padding-bottom: 125px;
-}
-
-.home-main {
-    position: relative;
-    top: 50px;
-    left: 100px;
-    margin-bottom: 40px;
 }
 
 .home-main>h1 {
@@ -168,12 +177,11 @@ a {
 
 .pic>img {
     position: relative;
-    top: 4px;
-    left: 100px;
+    bottom: -84px;
 }
 
 .button {
-    position: relative;
+    /*position: relative;*/
     top: 50px;
     left: 100px;
     text-align: center;
@@ -222,10 +230,12 @@ a {
 
 /*===== GITHUB AND LINKEDIN =====*/
 
+/*
 .logos {
     position: relative;
     left: 100px;
 }
+*/
 
 .logos>a {
     opacity: 0.6;
@@ -355,16 +365,6 @@ h4 {
 /*===== MEDIA QUERY =====*/
 
 @media screen and (max-width: 1400px) {
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        overflow-x: hidden;
-    }
     #Home {
         flex-direction: column;
         justify-content: center;
@@ -373,37 +373,31 @@ h4 {
         margin-right: auto;
     }
     .pic {
+        overflow: none;
+        margin: 0;
+    }
+    .intros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
         position: relative;
-        right: 100px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        top: 30px;
+        overflow: hidden;
     }
     .button {
-        width: 500px;
-        top: 0px;
-        left: 20%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .home-main {
-        position: relative;
-        left: 100px;
-    }
-    .logos {
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
+        width: 250px;
+        top: 10px;
+        margin: 0px auto;
     }
     .main-containerHome {
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
-        bottom: 20px;
-        padding-left: 0;
-        padding-right: 15%;
+        top: -80px;
+        padding: 0;
         align-items: center;
     }
     .grid-container {
@@ -414,6 +408,7 @@ h4 {
     }
 }
 
+/*
 @media screen and (max-width: 1024px) {
     .main-containerHome {
         padding-right: 18%;
@@ -425,3 +420,4 @@ h4 {
         padding-right: 25%;
     }
 }
+*/
