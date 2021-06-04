@@ -119,7 +119,7 @@ a {
 .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     padding-left: 10px;
     padding-right: 30px;
 }
@@ -136,6 +136,99 @@ a {
     padding: 10px;
     font-family: var(--header-font);
     opacity: 1;
+}
+
+/*===== MOBILE NAV BAR =====*/
+
+.mobile_nav {
+    background: rgba(0, 0, 0, 0.7);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    display: none;
+    transition: all 0.5s;
+}
+
+.active {
+    left: 0;
+    transition: all 0.5s;
+}
+
+.mobile_nav ul {
+    padding: 50px 0px;
+    transition: all 0.5s;
+}
+
+.mobile_nav li {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button1 {
+    background: #505050;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+}
+
+.button1 span {
+    background: #fff;
+    width: 50px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+.button1 span:before {
+    content: '';
+    background: #fff;
+    width: 50px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    top: -12px;
+}
+
+.button1 span:after {
+    content: '';
+    background: #fff;
+    width: 50px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    top: 12px;
+}
+
+.button1.btn span {
+    background: transparent;
+    transition: all 0.5s;
+}
+
+.button1.btn span:before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: all 0.5s;
+}
+
+.button1.btn span:after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all 0.5s;
 }
 
 /*===== GREETING SECTION =====*/
@@ -304,7 +397,7 @@ a {
 
 .arrow-up {
     position: absolute;
-    left: 2%;
+    left: 95%;
     transform: translate(-50%, -50%);
     animation: scroll-up 2s infinite;
 }
@@ -471,12 +564,30 @@ h4 {
         margin-right: auto;
         padding-top: 10%;
     }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .mobile_nav {
+        display: block;
+    }
+    .about-p>p {
+        font-size: 23px;
+    }
     .pic {
         overflow: none;
         margin: 0;
     }
     .pic>img {
         width: 300px;
+    }
+    .goal-list {
+        margin-left: 5%;
     }
     .intros {
         display: flex;
@@ -508,19 +619,30 @@ h4 {
         margin-left: auto;
         margin-right: auto;
     }
+    .grid-item {
+        background: #505050;
+        border-radius: 10px;
+        margin: 0;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+    }
     .arrow {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%)
     }
-    .arrow span {
-        display: block;
+    .arrow-down span {
         width: 20px;
         height: 20px;
-        border-bottom: 5px solid var(--secondaryColor);
-        border-right: 5px solid var(--secondaryColor);
-        transform: rotate(45deg);
-        animation: scroll 2s infinite;
+    }
+    .arrow-up span {
+        width: 20px;
+        height: 20px;
     }
     @keyframes scroll {
         0% {
