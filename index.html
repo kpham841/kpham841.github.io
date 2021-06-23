@@ -23,6 +23,14 @@
 </head>
 
 <body>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <div class="arrow-up">
+            <span></span>
+        </div>
+    </button>
+
     <header>
         <!-- NAVBAR -->
         <nav class="nav-bar">
@@ -129,29 +137,36 @@
                 <h1>Projects</h1>
             </div>
             <div class="grid-container">
-                <div class="grid-item">
+
+
+                <div class="grid-item"
+                    onclick='location.href = "https://discord.com/api/oauth2/authorize?client_id=722306796483641366&permissions=8&scope=bot";'>
                     <div class="grid-img">
-                        <img src="images/mayuri_chibi.png" alt="Mayuri Chibi"></a>
+                        <img src="images/mayuri_chibi.png" alt="Mayuri Chibi">
+
                     </div>
 
                     <div class="grid-txt">
                         <h2>MBot</h2>
-                        <p> A multi-purpose discord bot with administrative commands, mini-games, currency system, xp
+                        <p> A multi-purpose discord bot with administrative commands, mini-games, currency system,
+                            xp
                             system, and meme generator.</p>
                         <br>
                         <p>Created using Discord.js, user data stored in MongoDB, hosted on Heroku.</p>
                         <br>
                         <box-icon type='logo' name='nodejs' size='35px' color=rgb(214,214,214)></box-icon>
-                        <!--<p><b>Technologies Used:</b> Node.js, MongoDB, Heroku</p>-->
-                        <br>
-                        <br>
-                        <button class="button2"><a
-                                href="https://discord.com/api/oauth2/authorize?client_id=722306796483641366&permissions=8&scope=bot">Invite
-                            </a></button>
+                        <!--<p><b>Technologies Used:</b> Node.js, MongoDB, Heroku</p>
+                            <br>
+                            <br>
+                            <button class="button2"><a
+                                    href="https://discord.com/api/oauth2/authorize?client_id=722306796483641366&permissions=8&scope=bot">Invite
+                                </a></button>
+                            -->
                     </div>
                 </div>
 
-                <div class="grid-item">
+
+                <div class="grid-item" onclick='location.href = "https://devpost.com/software/healthez";'>
                     <div class="grid-img">
                         <img src="images/healthez.png" alt="Healthez"></a>
                     </div>
@@ -171,14 +186,15 @@
                         <box-icon type='logo' name='html5' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='css3' size='35px' color=rgb(214,214,214)></box-icon>
                         <br>
-                        <!--<p><b>Technologies Used:</b> JavaScript, HTML/CSS, Django, Python</p> -->
+                        <!--<p><b>Technologies Used:</b> JavaScript, HTML/CSS, Django, Python</p> 
                         <br>
                         <button class="button2"><a href="https://devpost.com/software/healthez">Details
                             </a></button>
+                            -->
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="grid-item" onclick='location.href = "https://devpost.com/software/unimeet-3e7p2m";'>
                     <div class="grid-img">
                         <img src="images/unimeet.png" alt="UniMeet"></a>
                     </div>
@@ -199,14 +215,16 @@
                         <box-icon type='logo' name='html5' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='css3' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='firebase' size='35px' color=rgb(214,214,214)></box-icon>
+                        <!--
                         <br>
                         <br>
                         <button class="button2"><a href="https://devpost.com/software/unimeet-3e7p2m">Details
                             </a></button>
+                        -->
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="grid-item" onclick='location.href = "https://devpost.com/software/resreview";'>
                     <div class="grid-img">
                         <img src="images/resreview.png" alt="ResReview"></a>
                     </div>
@@ -224,14 +242,16 @@
                         <box-icon type='logo' name='javascript' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='html5' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='css3' size='35px' color=rgb(214,214,214)></box-icon>
+                        <!--
                         <br>
                         <br>
                         <button class="button2"><a href="https://devpost.com/software/resreview">Details
                             </a></button>
+                        -->
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="grid-item" onclick='location.href = "https://github.com/kpham841/Data_Science_Projects";'>
                     <div class="grid-img">
                         <img src="images/datasci.png" alt="DataScience"></a>
                     </div>
@@ -245,14 +265,16 @@
                         <br>
                         <!--<p><b>Technologies Used:</b> React, HTML/CSS, JavaScript, Firebase, Python</p>-->
                         <box-icon type='logo' name='python' size='35px' color=rgb(214,214,214)></box-icon>
+                        <!--
                         <br>
                         <br>
                         <button class="button2"><a href="https://github.com/kpham841/Data_Science_Projects">View
                             </a></button>
+                        -->
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div class="grid-item" onclick='location.href = "https://github.com/kpham841/Web_Tools";'>
                     <div class="grid-img">
                         <img src="images/web_tools.png" alt="Calc"></a>
                     </div>
@@ -267,11 +289,12 @@
                         <box-icon type='logo' name='javascript' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='html5' size='35px' color=rgb(214,214,214)></box-icon>
                         <box-icon type='logo' name='css3' size='35px' color=rgb(214,214,214)></box-icon>
-                        <!--<p><b>Technologies Used:</b> JavaScript, HTML, CSS</p>-->
+                        <!--<p><b>Technologies Used:</b> JavaScript, HTML, CSS</p>
                         <br>
                         <br>
                         <button class="button2"><a href="https://github.com/kpham841/Web_Tools">View
                             </a></button>
+                        -->
                     </div>
                 </div>
 
@@ -369,7 +392,7 @@
         </div>
     </section>
 
-    <!-- ARROW -->
+    <!-- ARROW 
     <section class="s0v3" id="Home">
         <a href="#Home" class="nav-link" id="home">
             <div class="arrow-up">
@@ -378,6 +401,7 @@
             </div>
         </a>
     </section>
+-->
 
 
     <!-- FOOTER-->
