@@ -1,4 +1,5 @@
 <?php
+//NOT ABLE TO USE ON GITHUB PAGES - DOESN'T AllOW POST REQUESTS :(
 //get data from form  
 $name = $_POST['name'];
 $email= $_POST['email'];

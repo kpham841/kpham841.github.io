@@ -408,12 +408,10 @@
     <!-- Contact -->
     <section class="s2" id="Contact">
         <div class="main-container">
-            <form action="mail.php" method="post">
+            <form id="my-form" action="https://formspree.io/f/mwkanvew" method="POST" onsubmit="return isValidForm()">
                 <div class="contact-main">
                     <h1>Contact</h1>
                 </div>
-
-
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
@@ -429,9 +427,9 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
 
-                <input type="submit" value="Submit" onclick="checkInputs">
+                <input type="submit" value="Submit" onClick="return isValidForm()">
             </form>
-            <div id="status" class="success">Successfully Submitted</div>
+            <div id="status" class=""></div>
         </div>
     </section>
 

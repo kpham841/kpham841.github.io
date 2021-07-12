@@ -714,10 +714,31 @@ input[type="submit"]:hover {
 
 #status.success {
     background-color: greenyellow;
+    animation: status 4s ease forwards;
 }
 
 #status.error {
     background-color: orangered;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+    }
+    20% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 /*===== FOOTER =====*/
