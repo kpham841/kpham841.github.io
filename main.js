@@ -27,3 +27,14 @@ function topFunction () {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
 }
+
+// Error
+function checkInputs () {
+  if (
+    document.getElementById('name') == null ||
+    document.getElementById('email') == null ||
+    document.getElementById('message') == null
+  ) {
+    alert('Please fill in all empty fields.')
+  }
+}
