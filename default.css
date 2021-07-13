@@ -442,7 +442,7 @@ a {
     }
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
+        transform: rotate(45deg) translate(10px, 10px);
     }
 }
 
@@ -796,8 +796,8 @@ h4 {
     .pic>img {
         width: 300px;
     }
-    .goal-list {
-        margin-left: 10%;
+    .goal-list>ul>li {
+        font-size: 20px;
     }
     .intros {
         display: flex;
@@ -885,6 +885,9 @@ h4 {
     #myBtn {
         width: 50px;
         height: 50px;
+    }
+    .form-group {
+        font-size: 20px;
     }
 }
 
