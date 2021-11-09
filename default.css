@@ -4,7 +4,7 @@
   --mainColor: #252525;
   --secondaryColor: #fff;
   --borderColor: #c1c1c1;
-  --secondaryTextW: rgb(214, 214, 214);
+  --secondaryTextW: rgb(240, 240, 240);
   --secondaryTextB: rgb(46, 46, 46);
   --header-font: "Poppins", sans-serif;
   --p-font: "Roboto", sans-serif;
@@ -319,7 +319,7 @@ a {
   padding-bottom: 150px;
 }
 
-.home-main > h1 {
+.home-main>h1 {
   color: var(--secondaryColor);
   font-family: var(--header-font);
 }
@@ -333,7 +333,7 @@ a {
   padding-bottom: 5px;
 }
 
-.pic > img {
+.pic>img {
   position: relative;
   width: 500px;
 }
@@ -381,7 +381,7 @@ a {
   background: #000000c9;
 }
 
-.main-containerProj > .grid-container > .grid-item > .grid-txt > button > a {
+.main-containerProj>.grid-container>.grid-item>.grid-txt>button>a {
   font-size: 15px;
 }
 
@@ -394,17 +394,17 @@ a {
 }
 */
 
-.logos > a {
+.logos>a {
   padding-right: 15px;
   padding-left: 15px;
   opacity: 0.6;
 }
 
-.logos > a:hover {
+.logos>a:hover {
   opacity: 1;
 }
 
-.logos > a:hover {
+.logos>a:hover {
   opacity: 1;
 }
 
@@ -485,14 +485,14 @@ a {
 
 /*===== ABOUT SECTION =====*/
 
-.about-main > h1 {
+.about-main>h1 {
   color: var(--mainColor);
   font-family: var(--header-font);
   text-align: center;
   margin-bottom: 2%;
 }
 
-.about-p > p {
+.about-p>p {
   color: var(--secondaryTextB);
   font-family: var(--p-font);
   font-size: 30px;
@@ -500,7 +500,7 @@ a {
 
 /*=====PROJECTS SECTION =====*/
 
-.portfolio-main > h1 {
+.portfolio-main>h1 {
   color: var(--secondaryColor);
   font-family: var(--header-font);
   text-align: center;
@@ -548,29 +548,29 @@ a {
   padding: 0;
 }
 
-.grid-container > .grid-item > .grid-img > a > img:hover {
+.grid-container>.grid-item>.grid-img>a>img:hover {
   transform: scale(1.1);
 }
 
-.grid-item > h2 {
+.grid-item>h2 {
   margin-bottom: 0px;
 }
 
-.grid-item > .grid-txt > p {
+.grid-item>.grid-txt>p {
   font-family: var(--p-font);
   font-size: 15px;
   color: var(--secondaryTextW);
   margin-top: 0px;
 }
 
-.grid-item > .grid-txt > p {
+.grid-item>.grid-txt>p {
   font-family: var(--p-font);
   font-size: 15px;
   color: var(--secondaryTextW);
   margin-top: 0px;
 }
 
-.grid-item > .grid-txt > a {
+.grid-item>.grid-txt>a {
   font-family: var(--p-font);
   font-size: 15px;
   color: var(--secondaryTextW);
@@ -584,7 +584,7 @@ a {
 
 /*===== TECHNOLOGIES SECTION =====*/
 
-.technology-main > h1 {
+.technology-main>h1 {
   color: var(--mainColor);
   font-family: var(--header-font);
   text-align: center;
@@ -607,7 +607,7 @@ a {
 
 /*===== GOALS SECTION =====*/
 
-.goals-main > h1 {
+.goals-main>h1 {
   color: var(--secondaryColor);
   font-family: var(--header-font);
   text-align: center;
@@ -619,20 +619,20 @@ a {
   margin-left: 25%;
 }
 
-.goal-list > ul > li {
+.goal-list>ul>li {
   color: var(--secondaryTextW);
   font-family: var(--p-font);
   font-size: 30px;
 }
 
-.goal-list > ul > li > ul > li {
+.goal-list>ul>li>ul>li {
   font-size: 20px;
   margin-left: 50px;
 }
 
 /*===== CONTACT SECTION =====*/
 
-.contact-main > h1 {
+.contact-main>h1 {
   color: var(--mainColor);
   font-family: var(--header-font);
   text-align: center;
@@ -647,8 +647,7 @@ a {
   font-size: 25px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
   margin-top: 10px;
   width: 95%;
   padding: 15px;
@@ -766,21 +765,21 @@ input[type="submit"]:hover {
   padding-bottom: 20px;
 }
 
-.logos > a {
+.logos>a {
   padding-right: 15px;
   padding-left: 15px;
   opacity: 0.6;
 }
 
-.logos > a:hover {
+.logos>a:hover {
   opacity: 1;
 }
 
-.logos > a:hover {
+.logos>a:hover {
   opacity: 1;
 }
 
-.caption > p {
+.caption>p {
   font-family: var(--header-font);
   color: var(--secondaryColor);
 }
@@ -886,14 +885,14 @@ h4 {
   .mobile_nav {
     display: block;
   }
-  .about-p > p {
+  .about-p>p {
     font-size: 23px;
   }
   .pic {
     overflow: none;
     margin: 0;
   }
-  .pic > img {
+  .pic>img {
     width: 300px;
   }
   .intros {
@@ -978,7 +977,7 @@ h4 {
         }
     }
     */
-  .goal-list > ul > li {
+  .goal-list>ul>li {
     font-size: 23px;
   }
   #myBtn {
@@ -988,8 +987,7 @@ h4 {
   .form-group {
     font-size: 20px;
   }
-  .form-group input,
-  .form-group textarea {
+  .form-group input, .form-group textarea {
     padding: 10px;
     font-size: 15px;
   }
