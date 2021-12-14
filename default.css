@@ -589,6 +589,13 @@ a {
   gap: 10px;
 }
 
+.list-label {
+  font-family: var(--p-font);
+  font-size: 15px;
+  color: var(--secondaryTextW);
+  margin-top: 0px;
+}
+
 /*===== TECHNOLOGIES SECTION =====*/
 
 .technology-main>h1 {
