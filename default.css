@@ -1,12 +1,13 @@
 /*===== SET UP VARIABLES =====*/
 
 :root {
-  --mainColor: #252525;
+  /*--mainColor: #252525;*/
+  --mainColor: #000000;
   --secondaryColor: #fff;
   --borderColor: #c1c1c1;
   --secondaryTextW: rgb(240, 240, 240);
   --secondaryTextB: rgb(46, 46, 46);
-  --header-font: "Poppins", sans-serif;
+  --header-font: "Montserrat", sans-serif;
   --p-font: "Roboto", sans-serif;
 }
 
@@ -46,6 +47,13 @@ h2 {
   margin-top: 0px;
 }
 
+h2.proj {
+  font-size: 36px;
+  font-family: var(--header-font);
+  color: var(--mainColor);
+  margin-top: 0px;
+}
+
 h3 {
   font-size: 28px;
 }
@@ -75,6 +83,7 @@ a {
   text-decoration: none;
   color: var(--secondaryColor);
   font-size: 20px;
+  font-weight: bold;
 }
 
 .s0 {
@@ -123,14 +132,14 @@ a {
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
 }
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 10px;
+  /*border-radius: 10px; */
 }
 
 /* Handle on hover */
@@ -278,7 +287,7 @@ a {
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   width: 50px;
   height: 50px;
 }
@@ -347,7 +356,7 @@ a {
   margin: 0 auto;
   padding: 10px;
   background: var(--mainColor);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   cursor: pointer;
   border: 1px solid var(--secondaryColor);
   font-family: var(--header-font);
@@ -371,7 +380,7 @@ a {
   width: 100px;
   padding: 10px;
   background: var(--mainColor);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   cursor: pointer;
   border: none;
   font-family: var(--header-font);
@@ -381,7 +390,7 @@ a {
   background: #000000c9;
 }
 
-.main-containerProj>.grid-container>.grid-item>.grid-txt>button>a {
+.main-containerProj>.grid-container-projects>.grid-item>.grid-txt>button>a {
   font-size: 15px;
 }
 
@@ -495,20 +504,100 @@ a {
 }
 
 .about-p>p {
-  color: var(--secondaryTextB);
+  color: var(--mainColor);
   font-family: var(--p-font);
   font-size: 30px;
 }
 
-/*=====PROJECTS SECTION =====*/
+/*=====EXPERIENCE SECTION =====*/
 
-.portfolio-main>h1 {
+.experience-main>h1 {
   color: var(--secondaryColor);
   font-family: var(--header-font);
   text-align: center;
 }
 
-.grid-container {
+.grid-container-experience {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 100px;
+  margin-top: 80px;
+}
+
+.grid-item-exp {
+  width: 700px;
+  background: transparent;
+  /*border-radius: 10px;*/
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /*padding: 20px;*/
+  cursor: pointer;
+  border: 5px solid white;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-exp:hover {
+  /* White Shadow */
+  box-shadow: 10px 10px #ffffff;
+  /* White Glow 
+    box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);*/
+  transition: all 0.2s ease-in-out;
+}
+
+.grid-img-exp {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.grid-item-exp>h2 {
+  margin-bottom: 0px;
+}
+
+.grid-item-exp>.grid-txt>p {
+  font-family: var(--p-font);
+  font-size: 15px;
+  color: var(--secondaryTextW);
+  margin-top: 0px;
+}
+
+.grid-item-exp>.grid-txt>p {
+  font-family: var(--p-font);
+  font-size: 15px;
+  color: var(--secondaryTextW);
+  margin-top: 0px;
+}
+
+.grid-item-exp>.grid-txt>a {
+  font-family: var(--p-font);
+  font-size: 15px;
+  color: var(--secondaryTextW);
+  margin-top: 0px;
+}
+
+.exp-job {
+  font-size: 12px;
+  font-family: var(--p-font);
+  color: var(--secondaryTextW);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/*=====PROJECTS SECTION =====*/
+
+.portfolio-main>h1 {
+  color: var(--mainColor);
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.grid-container-projects {
   display: grid;
   justify-content: center;
   grid-template-columns: 500px 500px;
@@ -520,26 +609,33 @@ a {
 }
 
 .grid-item {
-  background: #505050;
-  border-radius: 10px;
+  background: transparent;
+  /*border-radius: 10px;*/
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 500px;
-  padding: 20px;
   cursor: pointer;
+  border: 5px solid var(--mainColor);
+}
+
+.grid-img-proj {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .grid-item:hover {
   /* White Shadow */
-  box-shadow: 10px 10px #ffffff;
+  box-shadow: 10px 10px var(--mainColor);
   /* White Glow 
     box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);*/
   transition: all 0.2s ease-in-out;
+
 }
 
 .grid-txt {
-  padding-left: 50px;
+  padding: 20px;
   line-height: 1.2;
 }
 
@@ -547,7 +643,7 @@ a {
   margin-bottom: 10px;
 }
 
-.grid-container .grid-item .grid-img img {
+.grid-container-projects .grid-item .grid-img img {
   width: 200px;
   height: auto;
   transition: all 0.2s ease-in-out;
@@ -555,7 +651,7 @@ a {
   padding: 0;
 }
 
-.grid-container>.grid-item>.grid-img>a>img:hover {
+.grid-container-projects>.grid-item>.grid-img>a>img:hover {
   transform: scale(1.1);
 }
 
@@ -566,21 +662,15 @@ a {
 .grid-item>.grid-txt>p {
   font-family: var(--p-font);
   font-size: 15px;
-  color: var(--secondaryTextW);
+  color: var(--secondaryTextB);
   margin-top: 0px;
 }
 
-.grid-item>.grid-txt>p {
-  font-family: var(--p-font);
-  font-size: 15px;
-  color: var(--secondaryTextW);
-  margin-top: 0px;
-}
 
 .grid-item>.grid-txt>a {
   font-family: var(--p-font);
   font-size: 15px;
-  color: var(--secondaryTextW);
+  color: var(--secondaryTextB);
   margin-top: 0px;
 }
 
@@ -592,7 +682,7 @@ a {
 .list-label {
   font-family: var(--p-font);
   font-size: 15px;
-  color: var(--secondaryTextW);
+  color: var(--secondaryTextB);
   margin-top: 0px;
 }
 
@@ -647,7 +737,7 @@ a {
 /*===== CONTACT SECTION =====*/
 
 .contact-main>h1 {
-  color: var(--mainColor);
+  color: var(--secondaryColor);
   font-family: var(--header-font);
   text-align: center;
 }
@@ -667,11 +757,16 @@ a {
   padding: 15px;
   font-size: 20px;
   font-family: var(--p-font);
-  border: 3px solid #ccc;
-  border-radius: 10px;
+  border: 3px solid rgb(255, 255, 255);
+  /*border-radius: 7px;*/
   resize: none;
 }
 
+label {
+  color: var(--secondaryColor);
+}
+
+/*
 input[type="text"] {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -680,7 +775,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border: 3px solid #555;
+  border: 3px solid rgb(207, 207, 207);
 }
 
 input[type="email"] {
@@ -691,7 +786,7 @@ input[type="email"] {
 }
 
 input[type="email"]:focus {
-  border: 3px solid #555;
+  border: 3px solid rgb(207, 207, 207);
 }
 
 textarea {
@@ -702,27 +797,38 @@ textarea {
 }
 
 textarea:focus {
-  border: 3px solid #555;
+  border: 3px solid rgb(207, 207, 207);
+}
+*/
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  outline: none;
 }
 
 input[type="submit"] {
   display: block;
   width: 40%;
   margin: 0px auto;
-  background-color: var(--mainColor);
+  background-color: transparent;
   font-family: var(--header-font);
   color: white;
   padding: 14px 20px;
   margin-top: 50px;
-  border: none;
-  border-radius: 10px;
+  border: 2px solid white;
+  /*border-radius: 10px;*/
   cursor: pointer;
   font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
 }
 
+
+
 input[type="submit"]:hover {
-  background-color: #4d4d4d;
+  background-color: #ffffff;
+  color: var(--mainColor);
 }
+
 
 #status {
   display: block;
@@ -731,7 +837,7 @@ input[type="submit"]:hover {
   font-size: 15px;
   text-align: center;
   margin-top: 50px;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   width: 50%;
   padding: 10px;
 }
@@ -799,6 +905,7 @@ input[type="submit"]:hover {
 .caption>p {
   font-family: var(--header-font);
   color: var(--secondaryColor);
+  font-weight: bold;
 }
 
 /*
@@ -951,7 +1058,7 @@ h4 {
     gap: 70px;
   }
 
-  .grid-container {
+  .grid-container-projects {
     display: grid;
     grid-template-columns: auto;
     margin-left: auto;
@@ -959,16 +1066,22 @@ h4 {
   }
 
   .grid-item {
+    /*
     background: #505050;
-    border-radius: 10px;
+    /*border-radius: 10px;
     margin: 0;
     display: flex;
     justify-items: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    */
     width: 300px;
     padding: 20px;
+  }
+
+  .grid-item-exp {
+    width: 300px;
   }
 
   .arrow {
