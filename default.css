@@ -589,6 +589,7 @@ a {
   letter-spacing: 2px;
 }
 
+
 /*=====PROJECTS SECTION =====*/
 
 .portfolio-main>h1 {
@@ -684,6 +685,15 @@ a {
   font-size: 15px;
   color: var(--secondaryTextB);
   margin-top: 0px;
+}
+
+.proj-job {
+  font-size: 12px;
+  font-family: var(--p-font);
+  color: var(--mainColor);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /*===== TECHNOLOGIES SECTION =====*/
