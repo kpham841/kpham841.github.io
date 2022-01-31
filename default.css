@@ -347,6 +347,15 @@ a {
   width: 500px;
 }
 
+#profile-img {
+  filter: grayscale(100%) brightness(120%);
+  transition: all 0.2s ease-in-out;
+}
+
+#profile-img:hover {
+  filter: grayscale(0%) brightness(120%);
+}
+
 .button {
   /*position: relative;*/
   top: 50px;
