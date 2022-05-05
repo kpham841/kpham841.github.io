@@ -155,9 +155,11 @@ a {
   padding-top: 5px;
   padding-bottom: 5px;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 9999;
   display: block;
+  transition: top 0.3s;
 }
 
 .nav-links {
@@ -997,6 +999,90 @@ h4 {
   }
 }
 
+/*===== CASE STUDIES =====*/
+
+/* HERO */
+#hero {
+  padding-top: 5%;
+}
+
+.hero-text {
+  font-family: var(--header-font);
+  color: var(--secondaryColor)
+}
+
+.hero-text>p {
+  padding-top: 20px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+#dd-mockup {
+  width: 500px;
+}
+
+#recipeal-mockup {
+  width: 800px;
+}
+
+
+/* OVERVIEW */
+.section-container {
+  margin: 0 auto;
+  padding-top: 80px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.section-container>h1, .section-container>h2 {
+  font-family: var(--header-font);
+  color: var(--mainColor)
+}
+
+.section-container>p {
+  font-family: var(--p-font);
+  color: var(--mainColor);
+  font-size: x-large;
+}
+
+.section-header {
+  padding-bottom: 20px;
+}
+
+#persona-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+#comp_anal, #feature_ideation, #roadmap, #rec_sketches, #rec_lofi_home, #rec_lofi_recipe, #rec_hifi_home1, #rec_hifi_recipe1, #rec_hifi_home2, #rec_hifi_recipe2, #rec_hifi_home3, #rec_hifi_recipe3, #rec_tech, #moodboard, #styleguide, #userel {
+  width: 100%;
+}
+
+#file_struct {
+  display: block;
+  margin: 0px auto;
+  width: 50%;
+}
+
+figcaption {
+  text-align: center;
+  font-family: var(--header-font);
+  padding: 20px 0px 100px 0px;
+  font-size: larger;
+}
+
+.persona {
+  width: 100%;
+}
+
 /*===== MEDIA QUERY =====*/
 
 @media screen and (max-width: 1200px) {
@@ -1021,8 +1107,11 @@ h4 {
   }
 
   .s0 {
+    display: flex;
     height: 100%;
     padding: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .s0v2 {
@@ -1122,6 +1211,22 @@ h4 {
   .arrow-up span {
     width: 20px;
     height: 20px;
+  }
+
+  .hero-container {
+    padding-top: 200px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #recipeal-mockup {
+    width: 80%;
+  }
+
+  #dd-mockup {
+    width: 60%;
   }
 
   @keyframes scroll {

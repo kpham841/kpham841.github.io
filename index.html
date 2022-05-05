@@ -325,8 +325,10 @@
             </div>
             <div class="grid-container-projects">
 
-                <div class="grid-item scroll-element js-scroll slide-left" onclick="window.open('https://github.com/cse110-fa21-group13/Recipeal','_blank');
-                ">
+                <!--<div class="grid-item scroll-element js-scroll slide-left" onclick="window.open('https://github.com/cse110-fa21-group13/Recipeal','_blank');
+                ">-->
+                <div class="grid-item scroll-element js-scroll slide-left" onclick="window.location='recipeal.html' ;">
+
                     <img src="images/recipeal.png" class="grid-img-proj" alt="Recipeal">
 
                     <div class="grid-txt">
@@ -496,20 +498,17 @@
                 </div>
 
                 <div class="grid-item scroll-element js-scroll slide-right"
-                    onclick="window.open('https://drive.google.com/drive/folders/1uisX5KCxDQYWimql9v3bgd3N3n_hGSo6?usp=sharing','_blank');">
+                    onclick="window.location='daily-dumpling.html' ;">
                     <img src="images/daily_dumpling2.png" class="grid-img-proj" alt="Calc"></a>
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
-                            <h2 class="proj">Design Projects</h2>
+                            <h2 class="proj">The Daily Dumpling</h2>
                         </div>
-                        <p>A collection of Design projects I did for my classes. </p>
+                        <span class="proj-job">App Prototype</span>
                         <br>
-                        <p>
-                            Skills: Prototyping,
-                            Wireframing, Visual Design, User Research, Usability Testing, Mobile
-                            Information Systems.
-                        </p>
+                        <br>
+                        <p>A high-fidelity prototype for a news app that’s focused on combating misinformation.</p>
                         <br>
                         <!--
                         <p> Courses:
@@ -718,17 +717,24 @@
 
 
 
-                <div class="grid-item scroll-element js-scroll slide-left">
-                    <img src="images/daily_dumpling2.png" class="grid-img-proj" alt="Calc"></a>
+
+
+
+                <div class="grid-item scroll-element js-scroll slide-left"
+                    onclick="window.open('https://drive.google.com/drive/folders/1uisX5KCxDQYWimql9v3bgd3N3n_hGSo6?usp=sharing','_blank');">
+                    <img src="images/design_posters.png" class="grid-img-proj" alt="Calc"></a>
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
-                            <h2 class="proj">The Daily Dumpling</h2>
+                            <h2 class="proj">Design Projects</h2>
                         </div>
-                        <span class="proj-job">App Prototype</span>
+                        <p>A collection of Design projects I did for my classes. </p>
                         <br>
-                        <br>
-                        <p>Case study in progress...</p>
+                        <p>
+                            Skills: Prototyping,
+                            Wireframing, Visual Design, User Research, Usability Testing, Mobile
+                            Information Systems.
+                        </p>
                         <br>
                         <!--
                         <p> Courses:
@@ -858,7 +864,7 @@
     <!-- Contact -->
     <section class="s1" id="Contact">
         <div class="main-container scroll-element js-scroll fade-in-bottom">
-            <form id="my-form" action="https://formspree.io/f/xyyldkyz" method="POST" onsubmit="return isValidForm()">
+            <form id="my-form" action="https://formspree.io/f/xyyldkyz" method="POST" onsubmit="isValidForm()">
                 <div class="contact-main">
                     <h1>Contact</h1>
                 </div>
@@ -877,7 +883,7 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
 
-                <input type="submit" value="Submit" onClick="return isValidForm()">
+                <input type="submit" value="Submit" onClick="isValidForm()">
             </form>
             <div id="status" class=""></div>
         </div>

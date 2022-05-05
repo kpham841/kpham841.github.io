@@ -6,8 +6,9 @@ $(document).ready(function () {
   })
 })
 
+
 // SCROLL UP BUTTON
-var mybutton = document.getElementById('myBtn')
+let mybutton = document.getElementById('myBtn')
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -30,7 +31,7 @@ function topFunction () {
 
 // Invalid Form
 function isValidForm () {
-  var status = document.getElementById('status')
+  let status = document.getElementById('status')
   if (
     document.getElementById('name').value == '' ||
     document.getElementById('email').value == '' ||
@@ -44,12 +45,12 @@ function isValidForm () {
 }
 
 // Form
-var form = document.getElementById('my-form')
+let form = document.getElementById('my-form')
 
 async function handleSubmit (event) {
   event.preventDefault()
-  var status = document.getElementById('status')
-  var data = new FormData(event.target)
+  let status = document.getElementById('status')
+  let data = new FormData(event.target)
   fetch(event.target.action, {
     method: form.method,
     body: data,
