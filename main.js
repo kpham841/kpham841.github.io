@@ -6,6 +6,20 @@ $(document).ready(function () {
   })
 })
 
+// Hide navbar when scrolling down
+let prevScrollpos = window.scrollY;
+document.onscroll = function() {
+  let currentScrollPos = window.scrollY;
+  // If scrolling up
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".nav-bar").style.top = "0";
+  // If scrolling down
+  } else {
+    document.querySelector(".nav-bar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 
 // SCROLL UP BUTTON
 let mybutton = document.getElementById('myBtn')

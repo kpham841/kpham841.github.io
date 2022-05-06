@@ -155,11 +155,11 @@ a {
   padding-top: 5px;
   padding-bottom: 5px;
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   z-index: 9999;
   display: block;
-  transition: top 0.3s;
+  transition: top 0.3s ease-in-out;
 }
 
 .nav-links {
