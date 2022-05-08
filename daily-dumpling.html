@@ -14,13 +14,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Khiem Pham</title>
+    <title>The Daily Dumpling</title>
     <meta name="description" content="Interested in web and software development, as well as UI/UX.">
     <meta name="Author" content="Khiem Pham">
 
 
     <!--FAVICON-->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="ico" href="images/dumpling_favicon.ico">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -74,7 +74,7 @@
         <div class="hero-container" style=" padding-top: 100px ">
             <div class="hero-text">
                 <h1>The Daily Dumpling</h1>
-                <p>Case study in progress... 😔
+                <p>"Boiling out misinformation one news 🥟 at a time"
                 </p>
             </div>
             <img src="images/dd_mockup.png" alt="dd-mockup" id="dd-mockup">
@@ -116,49 +116,244 @@
         <div class="section-container">
             <h1 class="section-header">Research</h1>
             <h2 class="section-subheader">Understanding the problem</h2>
+            <p>To understand the problem more, we started researching different online communities and resources
+                centered around our topic of misinformation in news. Through our research, we found that misinformation
+                is often <b>repeated</b> due to their <b>compelling and sensationalistic nature</b>. This repetition
+                makes people <b>more likely to believe them</b> even if it doesn't align with their beliefs.</p>
+            <br>
             <h2 class="section-subheader">Understanding our audience</h2>
-            <div id="persona-container">
+            <p>We created an online questionnaire to gain insight on how people consume news and their perceptions on
+                major news sources. We also conducted in-person interviews to explore more in-depth how users consume
+                and perceive news. From our survey and interviews, we found 3 key problems:
+            </p>
+            <br>
+            <ol id="cs-ol" style="list-style-position: inside;">
+                <li>People <b>don't have much time to read news</b></li>
+                <li>Fact-checking is <b>not easily accessible</b></li>
+                <li>News could be <b>biased towards one side</b></li>
+            </ol>
+            <br>
+            <p>
+                Based on the results from our questionnaire, we created user personas that detailed
+                the characteristics, goals, needs, problems and wants of our target demographic.</p>
+            <div class="cs-flex-container">
                 <figure>
-                    <img src="images/dd_persona1.png" class="persona" alt="Persona 1">
+                    <img src="images/dd_persona1.png" class="cs-pic" alt="Persona 1">
                     <figcaption>Persona 1: Student Daniel Andrius</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/dd_persona2.png" class="persona" alt="Persona 2">
+                    <img src="images/dd_persona2.png" class="cs-pic" alt="Persona 2">
                     <figcaption>Persona 2: Journalist Byron Rios</figcaption>
                 </figure>
             </div>
         </div>
         <div class="section-container">
+            <h1 class="section-header">Feature Ideation</h1>
+            <h2 class="section-subheader">Competitive Analysis</h2>
+            <p>We created a competitive analysis matrix to view what features other news services and social media
+                platforms had. We examined 3 main aspects: General, Comment section, and Fact-Check. From our
+                competitive analysis, we found that although many of the competitors had commenting and fact-checking,
+                they <b>weren't implemented in a way that prevented misinformation</b>. All comments are <b>neutral</b>
+                so
+                it's <b>hard to identify a comment's stance</b>, which can potentially <b>make it harder to detect
+                    biases
+                    in the news article</b>.
+                Additionally, the fact-checking features for
+                these apps
+                were often <b>hard to find</b> and <b>out-of-the way</b> for users, which can make it hard for users to
+                utilize
+                it.
+            </p>
+            <img src="images/dd_comp_anal.png" id="dd_comp_anal" class="cs-pic" alt="Competitive Analysis">
+            <p>After consolidating the information we got from our user research and competitive analysis, we ideated
+                on 3 main features for our app that would combat misinformation:</p>
+            <br>
+            <ol id="cs-ol" style="list-style-position: inside;">
+                <li><b>Fact-checking</b> that examines each paragraph and can be found directly in the articles</b></li>
+                <li><b>Multiperspective comments</b> where each comment is labeled as positive, negative, or
+                    netural.</b></li>
+                <li><b>Short summary</b> for articles so users can quickly obtain the important information from the
+                    article.
+                </li>
+            </ol>
+            <br>
+        </div>
+        <div class="section-container">
             <h1 class="section-header">Design</h1>
+            <h2 class="section-subheader">Sketch</h2>
+            <p>To ideate on the navigation and general look of our app, we created a few sketches that incorporated our
+                features.</p>
+            <figure>
+                <img src="images/dd_sketch.png" id="dd_sketch" class="cs-pic" alt="Sketch">
+                <figcaption>My Sketch</figcaption>
+            </figure>
             <h2 class="section-subheader">Low-Fidelity Prototype</h2>
+            <h3 class="section-subsubheader">First Iteration</h3>
+            <p>We picked out which components and details we liked across all of our sketches and compiled them
+                to create our first iteration of our lofi prototype.</p>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSCQFTmBHqJaeHjvJWQqI4k%2FDumpling's-A3%252FA4%3Fnode-id%3D39%253A3%26scaling%3Dscale-down%26page-id%3D39%253A2%26starting-point-node-id%3D39%253A3"
+                allowfullscreen></iframe>
+            <p>We invited users to test our first iteration
+                and received some useful suggestions such as including a <b>search bar to search for articles</b>, an
+                <b>overall fact-check score to quickly identify the reputability of the article</b>,
+                and a <b>notification indicator when people respond to their comments</b>.
+            </p>
+            <br>
+            <h3 class="section-subsubheader">Final Iteration</h3>
+            <p>
+                We took these suggestions
+                and incorporated them into our final lofi. </p>
+            <br>
+            <p>We added a search bar. For this, we included a <b>search icon, which would expand to become a search bar
+                    when it's clicked</b>.</p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/dd_search_before.png" class="cs-pic" alt="Search Before">
+                    <figcaption>Search Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dd_search_after.png" class="cs-pic" alt="Search After">
+                    <figcaption>Search After</figcaption>
+                </figure>
+            </div>
+            <p>We added a <b>notification menu on our side menu</b>.</p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/dd_notif_before.png" class="cs-pic" alt="Side Menu Before">
+                    <figcaption>Side Menu Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dd_notif_after.png" class="cs-pic" alt="Side Menu After">
+                    <figcaption>Side Menu After</figcaption>
+                </figure>
+            </div>
+            <p>We added an <b>overall fact-check score at the bottom of the
+                    article</b>.</p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/dd_score_before.png" class="cs-pic" alt="Score Before">
+                    <figcaption>Score Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dd_score_after.png" class="cs-pic" alt="Score After">
+                    <figcaption>Score After</figcaption>
+                </figure>
+            </div>
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSCQFTmBHqJaeHjvJWQqI4k%2FDumpling's-A3%252FA4%3Fnode-id%3D323%253A140%26starting-point-node-id%3D323%253A330%26hotspot-hints%3D0%26scaling%3Dscale-down"
                 allowfullscreen></iframe>
             <h2 class="section-subheader">Moodboard/Style Guide</h2>
+            <p>After we solidified the general structure of our app through the lofi, we worked on styling our
+                app. We first generated a few adjectives that described our app and compiled images that fit those
+                adjectives.</p>
             <figure>
-                <img src="images/dd_moodboard.png" id="moodboard" alt="Moodboard">
+                <img src="images/dd_moodboard.png" id="moodboard" class="cs-pic" alt="Moodboard">
                 <figcaption>Moodboard</figcaption>
             </figure>
+            <p>Our moodboard helped us decide on which colors we should use for our app. From there, we chose fonts
+                based on our adjectives and tried to choose one that was professional, yet bold. When creating our logo,
+                we went through various iterations trying to incorporate our primary colors and dumpling/news visuals to
+                fit our overall theme. </p>
             <figure>
-                <img src="images/dd_styleguide.png" id="styleguide" alt="Style Guide">
+                <img src="images/dd_styleguide.png" id="styleguide" class="cs-pic" alt="Style Guide">
                 <figcaption>Style Guide</figcaption>
             </figure>
+            <p>After finalizing our style guide, we started designing some user elements like buttons, comments, pages
+                and menus. We strived to create a <b>minimalistic and professional look</b> so our app can convey a
+                sense of trust and to allow users to solely focus on
+                the
+                information presented. </p>
             <figure>
-                <img src="images/dd_userelements.png" id="userel" alt="User Elements">
+                <img src="images/dd_userelements.png" id="userel" class="cs-pic" alt="User Elements">
                 <figcaption>User Elements</figcaption>
             </figure>
             <h2 class="section-subheader">High-Fidelity Prototype</h2>
+            <h3 class="section-subsubheader">First Iteration</h3>
+            <p>We implemented our style guide and user elements into our lofi prototype to create our hifi prototype.
+            </p>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSCQFTmBHqJaeHjvJWQqI4k%2FDumpling's-A3%252FA4%3Fnode-id%3D602%253A46%26scaling%3Dscale-down%26page-id%3D469%253A2%26starting-point-node-id%3D613%253A56"
+                allowfullscreen></iframe>
+            <p>Once again, we invited users to test out our prototype. Some of the suggestions we got from our users
+                were <b>explaining how fact-checking scores are generated</b>, <b>having a saved article section</b> so
+                user's can
+                <b>easily access articles that they save</b>, and <b>graying
+                    our notifications that the user has already read</b> to create a <b>clear visual focus on the unread
+                    ones</b>.
+            </p>
+            <br>
+            <h3 class="section-subsubheader">Final Iteration</h3>
+            <p>
+                We took these suggestions
+                and incorporated them into our final lofi. </p>
+            <br>
+            <p>We added an <b>about page on the side menu that explains how the fact-checking scores are calculated</b>.
+            </p>
+            <figure>
+                <img src="images/dd_about_after.png" class="cs-pic-smaller" alt="Side Menu After">
+                <figcaption>About Page</figcaption>
+            </figure>
+            <p>We added a <b>saved article section on the user's profile</b>.</p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/dd_saved_before.png" class="cs-pic" alt="Profile Before">
+                    <figcaption>Profile Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dd_saved_after.png" class="cs-pic" alt="Profile After">
+                    <figcaption>Profile After</figcaption>
+                </figure>
+            </div>
+            <p>We <b>grayed out notifications that the user had already read</b>.</p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/dd_grey_before.png" class="cs-pic" alt="Notification Before">
+                    <figcaption>Notification Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dd_grey_after.png" class="cs-pic" alt="Notification After">
+                    <figcaption>Notification After</figcaption>
+                </figure>
+            </div>
+
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSCQFTmBHqJaeHjvJWQqI4k%2FDumpling's-A3%252FA4%3Fnode-id%3D862%253A441%26scaling%3Dscale-down%26page-id%3D469%253A2%26starting-point-node-id%3D862%253A430"
                 allowfullscreen></iframe>
         </div>
         <div class="section-container">
-            <h1 class="section-header">Reflection</h1>
-        </div>
-        <div class="section-container">
             <h1 class="section-header">Next Steps</h1>
+            <p>If we were to continue working on this project, we would work on:</p>
+            <br>
+            <ul id="cs-ul">
+                <li>Making more logical layouts for the browsing pages</li>
+                <li>Create a smoother user experience</li>
+                <li>More features (advanced searching, filters, friend list...)</li>
+            </ul>
         </div>
 
+    </section>
+
+    <!-- FOOTER-->
+    <section id="footer">
+        <div class="footer-main">
+            <div class="logos">
+                <a href="https://github.com/kpham841" target="_blank">
+                    <i class='bx bxs-like bx-lg'></i>
+                    <box-icon type='logo' name='github' color='white' size='30px'></box-icon>
+
+                </a>
+                <a href="https://www.linkedin.com/in/kpham841/" target="_blank">
+                    <box-icon name='linkedin-square' type='logo' color='white' size='30px'></box-icon>
+                </a>
+                <a href="https://devpost.com/khiempham841" target="_blank">
+                    <img src="images/devpost.png" alt="Devpost" width="30px" height="30px">
+                </a>
+            </div>
+            <div class="caption">
+                <p>Designed & Built by Khiem Pham</p>
+            </div>
+        </div>
     </section>
 
     <!-- SCROLL REVEAL -->

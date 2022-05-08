@@ -14,13 +14,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Khiem Pham</title>
+    <title>Recipeal</title>
     <meta name="description" content="Interested in web and software development, as well as UI/UX.">
     <meta name="Author" content="Khiem Pham">
 
 
     <!--FAVICON-->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/recipeal_favicon.png">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -74,10 +74,13 @@
         <div class="hero-container" style=" padding-top: 100px ">
             <div class="hero-text">
                 <h1>Recipeal</h1>
-                <p>Case study in progress... 😔 Here's a link to the <a
-                        href="https://github.com/cse110-fa21-group13/Recipeal">Repo</a> in the meantime
-
+                <p>An intuitive, all-in-one recipe manager
                 </p>
+                <br>
+                <a href="https://github.com/cse110-fa21-group13/Recipeal" target="_blank">
+                    <i class='bx bxs-like bx-lg'></i>
+                    <box-icon type='logo' name='github' color='white' size='35px'></box-icon>
+                </a>
             </div>
             <img src="images/recipeal_mockup.png" alt="recipeal-mockup" id="recipeal-mockup">
         </div>
@@ -119,100 +122,255 @@
         </div>
         <div class="section-container">
             <h1 class="section-header">Research</h1>
+            <h2 class="section-subheader">Understanding our competition</h2>
+            <p>We examined many popular recipe managers and their features to identify what they do right and what they
+                do wrong. We found that although many of our competitors had a large amount of features, this would
+                often cause bloat and make it <b>more difficult to navigate the application.</b></p>
             <figure>
-                <img src="images/comp_anal.png" id="comp_anal" alt="Competitive Analysis">
+                <img src="images/comp_anal.png" class="cs-pic" alt="Competitive Analysis">
                 <figcaption>Competitive Analysis</figcaption>
             </figure>
-            <div id="persona-container">
+            <h2 class="section-subheader">Understanding our target audience</h2>
+            <p>To get a better idea of our potential user base, we created personas to help us ideate on our audience's
+                needs, goals, and the context in which they will use a product like this. The 2 personas we came up with
+                are Tina, a working parent who needs help cooking for their family, and Johnny, a hobby chef who's
+                interested in cooking/baking.</p>
+            <div class="cs-flex-container">
                 <figure>
-                    <img src="images/persona1.png" class="persona" alt="Persona 1">
+                    <img src="images/persona1.png" class="cs-pic" alt="Persona 1">
                     <figcaption>Persona 1: Mom Tina</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/persona2.png" class="persona" alt="Persona 2">
+                    <img src="images/persona2.png" class="cs-pic" alt="Persona 2">
                     <figcaption>Persona 2: Hobby Chef Johnny</figcaption>
                 </figure>
             </div>
+            <h2 class="section-subheader">Defining the goal</h2>
+            <p>After performing research to understand our competition and target audience, we defined the goal for our
+                application: <b>To provide busy people an intuitive and hassle-free way to organize their recipes to
+                    simplify the cooking process.</b></p>
         </div>
         <div class="section-container">
             <h1 class="section-header">Planning</h1>
+            <h2 class="section-subheader">Feature Prioritization</h2>
+            <p>Given our 10 week timeline, we had to <b>prioritize some features over others</b>. We separated our
+                potential
+                features into 2 groups: core and extra. Core are the features that are essential to a recipe manager,
+                such as recipe creation and organization. Extra are features that aren't necessary and only supplement
+                the core features. We would be implementing these after the core features are completely implemented. We
+                finalized the core features to be the CRUD (Create - Read - Update - Delete) functions, and if we had
+                time, we would work on extra features such as exploring new recipes, meal planners, and grocery lists.
+            </p>
             <figure>
-                <img src="images/feature_ideation.png" id="feature_ideation" alt="Feature Ideation">
+                <img src="images/feature_ideation.png" class="cs-pic" alt="Feature Ideation">
                 <figcaption>Ideating Features</figcaption>
             </figure>
+            <h2 class="section-subheader">Laying out the project roadmap</h2>
+            <p>After solidifying the features we wanted and their priority, we laid out a roadmap detailing <b>what we
+                    would work on and an estimate of when they should be completed</b>. It starts with developing
+                the UI/UX,
+                followed by developing the
+                frontend and backend while simulataneously performing QA tests.</p>
             <figure>
-                <img src="images/roadmap.png" id="roadmap" alt="Roadmap">
+                <img src="images/roadmap.png" class="cs-pic" alt="Roadmap">
                 <figcaption>Project Roadmap</figcaption>
             </figure>
         </div>
         <div class="section-container">
             <h1 class="section-header">Design</h1>
+            <h2 class="section-subheader">Sketches</h2>
+            <p>To start, we first created some rough sketches to give us a general idea of how the pages would be laid
+                out. </p>
             <figure>
-                <img src="images/rec_sketches.png" id="rec_sketches" alt="Sketches">
+                <img src="images/rec_sketches.png" class="cs-pic" alt="Sketches">
                 <figcaption>Sketches</figcaption>
             </figure>
-            <div id="persona-container">
+            <h2 class="section-subheader">Low-Fidelity</h2>
+            <p>We created our low-fidelity based on our sketches. Since our goal was
+                to
+                simplify the user interfacer to make it as intuitive as possible, we decided on <b>3 main menus that we
+                    felt were essential for users: My Recipes, Explore, and Favorites</b>.</p>
+            <div class="cs-flex-container">
                 <figure>
-                    <img src="images/rec_lofi_home.png" id="rec_lofi_home" alt="Home Page Lofi">
+                    <img src="images/rec_lofi_home.png" class="cs-pic" alt="Home Page Lofi">
                     <figcaption>Home Page Lofi</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rec_lofi_recipe.png" id="rec_lofi_recipe" alt="Recipe Page Lofi">
+                    <img src="images/rec_lofi_recipe.png" class="cs-pic" alt="Recipe Page Lofi">
                     <figcaption>Recipe Page Lofi</figcaption>
                 </figure>
             </div>
-            <div id="persona-container">
+            <h2 class="section-subheader">High-Fidelity</h2>
+            <p>From there, we polished the low-fidelity by creating better visuals and adding colors. At this point, we
+                were
+                indecisive in our original design so we started creating multiple different hi-fi's
+                to brainstorm various designs.</p>
+            <h2 class="section-subsubheader">Design 1</h2>
+            <div class="cs-flex-container">
                 <figure>
-                    <img src="images/rec_hifi_home1.png" id="rec_hifi_home1" alt="Home Page Hifi Version 1">
-                    <figcaption>Home Page Hifi Version 1</figcaption>
+                    <img src="images/rec_hifi_home1.png" class="cs-pic" alt="Home Page Hifi Version 1">
+                    <figcaption>Home Page Hifi Design 1</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rec_hifi_recipe1.png" id="rec_hifi_recipe1" alt="Recipe Page Hifi Version 1">
-                    <figcaption>Recipe Page Hifi Version 1</figcaption>
+                    <img src="images/rec_hifi_recipe1.png" class="cs-pic" alt="Recipe Page Hifi Version 1">
+                    <figcaption>Recipe Page Hifi Design 1</figcaption>
                 </figure>
             </div>
-            <div id="persona-container">
+            <h2 class="section-subsubheader">Design 2</h2>
+            <div class="cs-flex-container">
                 <figure>
-                    <img src="images/rec_hifi_home2.png" id="rec_hifi_home2" alt="Home Page Hifi Version 2">
-                    <figcaption>Home Page Hifi Version 2</figcaption>
+                    <img src="images/rec_hifi_home2.png" class="cs-pic" alt="Home Page Hifi Version 2">
+                    <figcaption>Home Page Hifi Design 2</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rec_hifi_recipe2.png" id="rec_hifi_recipe2" alt="Recipe Page Hifi Version 2">
-                    <figcaption>Recipe Page Hifi Version 2</figcaption>
+                    <img src="images/rec_hifi_recipe2.png" class="cs-pic" alt="Recipe Page Hifi Version 2">
+                    <figcaption>Recipe Page Hifi Design 2</figcaption>
                 </figure>
             </div>
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F07tkHAFYeXJOPpOTjGb8aF%2FMockups%3Fnode-id%3D11%253A19%26scaling%3Dcontain%26page-id%3D11%253A4%26starting-point-node-id%3D11%253A227"
                 allowfullscreen></iframe>
-            <div id="persona-container">
+            <h2 class="section-subsubheader">Design 3</h2>
+            <p>I was responsible for this design. To brainstorm the styling, I first listed out
+                adjectives that I wanted our recipe manager to convey and compiled images that expressed those
+                adjectives. I settled on <b>green as the primary colors and various other shades of green for secondary
+                    colors</b>, as I felt they conveyed adjectives such as <b>"fresh", "natural", and "healthy",
+                    which would make it more appealing for our users</b>. From there, I created a style guide for the
+                typography, user elements, and logos. I
+                utilized the <b>card design found in design 2 for most of the elements</b>, as I felt it would help
+                users
+                <b>easily identify the individual components</b>.
+            </p>
+            <figure>
+                <img src="images/rec_moodboard.png" class="cs-pic" alt="Moodboard">
+                <figcaption>Moodboard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rec_styleguide.png" class="cs-pic" alt="Style Guide">
+                <figcaption>Style Guide</figcaption>
+            </figure>
+            <div class="cs-flex-container">
                 <figure>
-                    <img src="images/rec_hifi_home3.png" id="rec_hifi_home3" alt="Home Page Hifi Version 3">
-                    <figcaption>Home Page Hifi Version 3</figcaption>
+                    <img src="images/rec_hifi_home3.png" class="cs-pic" alt="Home Page Hifi Version 3">
+                    <figcaption>Home Page Hifi Design 3</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rec_hifi_recipe3.png" id="rec_hifi_recipe3" alt="Recipe Page Hifi Version 3">
-                    <figcaption>Recipe Page Hifi Version 3</figcaption>
+                    <img src="images/rec_hifi_recipe3.png" class="cs-pic" alt="Recipe Page Hifi Version 3">
+                    <figcaption>Recipe Page Hifi Design 3</figcaption>
                 </figure>
             </div>
+            <p>As a group, we chose to move forward with Design 3.</p>
         </div>
+
         <div class="section-container">
             <h1 class="section-header">Development</h1>
+            <h2 class="section-subheader">Questions</h2>
+            <p>After finalizing our hi-fi prototype, we were now ready to start developing our application. Before we
+                started,
+                we
+                needed to answer a few questions:</p>
+            <br>
+            <ol id="cs-ol">
+                <li>What technologies should we use? Should we use frameworks?</li>
+                <li>What kind of web application did we want to create (Single Page Application or Multiple Page
+                    Application)?</li>
+                <li>Should we utilize a database or local storage to store data?</li>
+            </ol>
+            <br>
+            <p>We did extensive research and held many team meetings to answer these questions. Here's how we decided to
+                address these questions:</p>
+            <br>
+            <ol id="cs-ol">
+                <li>We should strive to <b>reduce the amount of technologies</b> we incorporate to <b>reduce the number
+                        of dependencies</b>.
+                    This means no frameworks and minimal libraries. We will strictly be using HTML/CSS and vanilla
+                    JavaScript.</li>
+                <li>Due to <b>SPA's speed and mobile-friendly design</b>, it will be our best bet in <b>delivering a
+                        good user experience</b>.</li>
+                <li>Given the time constraints and the kind of data we'll be working with, we will use local storage
+                    since it is <b>sufficient for what we want to accomplish</b> and helps us <b>avoid unnecessary
+                        complications</b>
+                    that utilizing a database would cause.</li>
+            </ol>
+            <h2 class="section-subheader">Implementation</h2>
+            <p>We first created the base page, which is where HTML elements would be injected or hidden to display
+                different pages. We next worked on the JavaScript functions that handle navigation of pages, CRUD
+                functions, and recipe card creation. As mentioned, we used local storage to store and retrieve recipe
+                data, which was relatively simple to do and saved us a lot of time. After we were done implementing the
+                CRUD functions, we had some
+                leftover time so we got to work on extra features like exploring new recipes, cook mode, timer, and
+                text-to-speech. For fetching new recipes, we used the Spoonacular API.</p>
+            <p>
+                <br>
+                Upon implementing all of our features, we started working on the styling to make it look similar to our
+                design mockup and making our app responsive to smaller screens. To do this, we utilized a few libraries
+                to simplify the styling process, such as Bootstrap, SweetAlert, and Animate.css. During the whole
+                development
+                process, our QA
+                testers implemented code quality checks and coverage using Codacy, Linter, and Cypress so that every
+                time we pushed to main, tests would be run to ensure the quality of our code.
+            </p>
             <figure>
-                <img src="images/rec_tech.png" id="rec_tech" alt="Technologies Used">
+                <img src="images/rec_tech.png" class="cs-pic" alt="Technologies Used">
                 <figcaption>Technologies Used</figcaption>
             </figure>
+            <h2 class="section-subheader">Demo</h2>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
+                src="https://recipeal.netlify.app" allowfullscreen></iframe>
         </div>
         <div class="section-container">
             <h1 class="section-header">Challenges</h1>
-            <figure>
-                <img src="images/rec_file_struct.png" id="file_struct" alt="File Structure">
-                <figcaption>Organizing Files into Folders</figcaption>
-            </figure>
+            <ul id="cs-ul">
+                <li><b>Merge Conflicts:</b> Since everyone was working out of a different branch, when
+                    it came time to merge to main, many things would break due to the differences in everyone's code.
+                    Resolving these issues involved going through the code line by line to make sure the new code
+                    wouldn't interfere with the old ones. To reduce the number of conflicts, we constantly communicated
+                    which features we were working on and which parts of the code would be modified.</li>
+                <li><b>Organization:</b> Figuring out the best way to organize and refactor the code was difficult.
+                    There were many files and functions that were created by different people so it was hard to figure
+                    out how to organize them so it's maintainable. To solve these issues, we communicated and organized
+                    the files in certain folders based on their functionality, as well as put detailed comments in our
+                    code so we would be aware of their relation with the code as a whole.
+                </li>
+
+                <li><b>Time Constraints</b>: The short period of time we had to work on the projects caused us to rush
+                    our development, skip certain bugs, and take shortcuts in testing. </li>
+            </ul>
+
         </div>
         <div class="section-container">
             <h1 class="section-header">Next Steps</h1>
+            <p>If we were to continue working on this project, we would work on:</p>
+            <br>
+            <ul id="cs-ul">
+                <li>Filters for searched recipes so users can search for recipes that fit a certain criteria.</li>
+                <li>Calendar implementation so users could plan out their recipes on certain days.</li>
+                <li>Importing recipes given a website link so users could easily import recipes from the web to our
+                    application.</li>
+            </ul>
         </div>
+    </section>
 
+    <!-- FOOTER-->
+    <section id="footer">
+        <div class="footer-main">
+            <div class="logos">
+                <a href="https://github.com/kpham841" target="_blank">
+                    <i class='bx bxs-like bx-lg'></i>
+                    <box-icon type='logo' name='github' color='white' size='30px'></box-icon>
+
+                </a>
+                <a href="https://www.linkedin.com/in/kpham841/" target="_blank">
+                    <box-icon name='linkedin-square' type='logo' color='white' size='30px'></box-icon>
+                </a>
+                <a href="https://devpost.com/khiempham841" target="_blank">
+                    <img src="images/devpost.png" alt="Devpost" width="30px" height="30px">
+                </a>
+            </div>
+            <div class="caption">
+                <p>Designed & Built by Khiem Pham</p>
+            </div>
+        </div>
     </section>
 
     <!-- SCROLL REVEAL -->
