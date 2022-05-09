@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJZC9KDYKG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PJZC9KDYKG');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-59R56XH');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
     <title>Recipeal</title>
-    <meta name="description" content="Interested in web and software development, as well as UI/UX.">
+    <meta name="description" content="A recipe manager that allows users to easily store and organize their favorite recipes, and
+    help them explore new ones.">
     <meta name="Author" content="Khiem Pham">
 
 
@@ -23,19 +25,21 @@
     <link rel="icon" type="image/png" href="images/recipeal_favicon.png">
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans?family=Montserrat&family=Roboto&display=swap"
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans&family=Roboto&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="default.css">
 
     <!-- BOXICONS -->
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <!-- <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script> --> -->
+    <script src="https://unpkg.com/boxicons@2.1.0/dist/boxicons.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,15 +54,15 @@
         <nav class="nav-bar">
 
             <div class="nav-links">
-                <a href="index.html" class="nav-link" id="welcome">Home</a>
-                <a href="index.html#Projects" class="nav-link" id="welcome">Other Projects</a>
+                <a href="index.html" class="nav-link" id="nav-link-home">Home</a>
+                <a href="index.html#Projects" class="nav-link" id="nav-link-proj">Other Projects</a>
 
             </div>
 
             <div class="mobile_nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link" id="welcome">Home</a></li>
-                    <li><a href="index.html#Projects" class="nav-link" id="welcome">Other Projects</a></li>
+                    <li><a href="index.html" class="nav-link" id="nav-link-home-mob">Home</a></li>
+                    <li><a href="index.html#Projects" class="nav-link" id="nav-link-proj-mob">Other Projects</a></li>
                 </ul>
 
                 <div class="button1" id="hello">
@@ -227,7 +231,7 @@
                     <figcaption>Recipe Page Hifi Design 2</figcaption>
                 </figure>
             </div>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700"
+            <iframe title="Design 2 Prototype" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F07tkHAFYeXJOPpOTjGb8aF%2FMockups%3Fnode-id%3D11%253A19%26scaling%3Dcontain%26page-id%3D11%253A4%26starting-point-node-id%3D11%253A227"
                 allowfullscreen></iframe>
             <h2 class="section-subsubheader">Design 3</h2>
@@ -315,7 +319,7 @@
                 <figcaption>Technologies Used</figcaption>
             </figure>
             <h2 class="section-subheader">Demo</h2>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
+            <iframe title="Recipeal Demo" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
                 src="https://recipeal.netlify.app" allowfullscreen></iframe>
         </div>
         <div class="section-container">

@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJZC9KDYKG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PJZC9KDYKG');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-59R56XH');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
     <title>Khiem Pham</title>
-    <meta name="description" content="Interested in web and software development, as well as UI/UX.">
+    <meta name="description"
+        content="I'm a fourth-year student at the University of California, San Diego interested in web and software development, as well as UI/UX.">
     <meta name="Author" content="Khiem Pham">
 
 
@@ -23,9 +25,10 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans?family=Montserrat&family=Roboto&display=swap"
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans&family=Roboto&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
@@ -33,14 +36,20 @@
 
     <!-- BOXICONS -->
     <!-- <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script> --> -->
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.0/dist/boxicons.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R56XH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- SCROLL TO TOP BUTTON -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <div class="arrow-up">
@@ -53,20 +62,20 @@
         <nav class="nav-bar">
 
             <div class="nav-links">
-                <a href="#Home" class="nav-link" id="welcome">Home</a>
-                <a href="#About" class="nav-link" id="about">About</a>
-                <a href="#Experience" class="nav-link" id="experience">Experience</a>
-                <a href="#Projects" class="nav-link" id="projects">Projects</a>
-                <a href="#Contact" class="nav-link" id="contact">Contact</a>
+                <a href="#Home" class="nav-link" id="nav-link-home">Home</a>
+                <a href="#About" class="nav-link" id="nav-link-about">About</a>
+                <a href="#Experience" class="nav-link" id="nav-link-experience">Experience</a>
+                <a href="#Projects" class="nav-link" id="nav-link-projects">Projects</a>
+                <a href="#Contact" class="nav-link" id="nav-link-contact">Contact</a>
             </div>
 
             <div class="mobile_nav">
                 <ul>
-                    <li><a href="#Home" class="nav-link" id="welcome">Home</a></li>
-                    <li><a href="#About" class="nav-link" id="about">About</a></li>
-                    <li><a href="#Experience" class="nav-link" id="experience">Experience</a></li>
-                    <li><a href="#Projects" class="nav-link" id="projects">Projects</a></li>
-                    <li><a href="#Contact" class="nav-link" id="contact">Contact</a></li>
+                    <li><a href="#Home" class="nav-link" id="nav-link-home-mob">Home</a></li>
+                    <li><a href="#About" class="nav-link" id="nav-link-about-mob">About</a></li>
+                    <li><a href="#Experience" class="nav-link" id="nav-link-experience-mob">Experience</a></li>
+                    <li><a href="#Projects" class="nav-link" id="nav-link-projects-mob">Projects</a></li>
+                    <li><a href="#Contact" class="nav-link" id="nav-link-contact-mob">Contact</a></li>
                 </ul>
 
                 <div class="button1" id="hello">
@@ -377,7 +386,7 @@
                         <br>
 
                         <div class="icon-container">
-                            <img src="images/arduino_icon.png" width='30px'>
+                            <img src="images/arduino_icon.png" alt="arduino-icon" width='30px'>
                         </div>
                     </div>
                 </div>
@@ -460,7 +469,7 @@
                         <!--<p><b>Technologies Used:</b> React, HTML/CSS, JavaScript, Firebase, Python</p>-->
                         <div class="icon-container">
                             <box-icon type='logo' name='python' size='30px' color=rgb(0,0,0)></box-icon>
-                            <img src="images/r_icon.png" width='30px'>
+                            <img src="images/r_icon.png" alt="r-icon" width='30px'>
                         </div>
                         <!--
                         <br>
@@ -491,27 +500,26 @@
                         </p>
                         <br>
                         <ul>
-                            <li>
-                                <p class="list-label"><u>Healthez</u>: A web application that allows users to search up
-                                    food
-                                    products
-                                    and view their
-                                    nutritional
-                                    information.</p>
+                            <li class="list-label">
+                                <u>Healthez</u>: A web application that allows users to search up
+                                food
+                                products
+                                and view their
+                                nutritional
+                                information.</p>
                             </li>
-                            <br>
-                            <li>
-                                <p class="list-label"><u>UniMeet</u>: A web application that allows university students
-                                    to
-                                    meet‐up with
-                                    other students
-                                    through similar
-                                    interests.</p>
+
+                            <li class="list-label">
+                                <u>UniMeet</u>: A web application that allows university students
+                                to
+                                meet‐up with
+                                other students
+                                through similar
+                                interests.</p>
                             </li>
-                            <br>
-                            <li>
-                                <p class="list-label">
-                                    <u>ResReview</u>: A web application that allows users to upload and review resumes.
+
+                            <li class="list-label">
+                                <u>ResReview</u>: A web application that allows users to upload and review resumes.
                                 </p>
                             </li>
                         </ul>
@@ -835,9 +843,7 @@
         <div class="footer-main">
             <div class="logos">
                 <a href="https://github.com/kpham841" target="_blank">
-                    <i class='bx bxs-like bx-lg'></i>
                     <box-icon type='logo' name='github' color='white' size='30px'></box-icon>
-
                 </a>
                 <a href="https://www.linkedin.com/in/kpham841/" target="_blank">
                     <box-icon name='linkedin-square' type='logo' color='white' size='30px'></box-icon>
