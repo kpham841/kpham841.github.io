@@ -1165,10 +1165,6 @@ li:not(:last-child) {
     font-size: 4vw;
   }
 
-  .nav-bar {
-    display: none;
-  }
-
   .section-subheader {
     font-size: 3vw;
   }
