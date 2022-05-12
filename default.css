@@ -487,6 +487,8 @@ li {
   }
 }
 
+
+
 .arrow-up {
   position: absolute;
   left: 50%;
@@ -644,6 +646,7 @@ li {
   width: 500px;
   cursor: pointer;
   border: 5px solid var(--mainColor);
+  transition: all 0.2s ease-in-out;
 }
 
 .grid-img-proj {
@@ -1160,6 +1163,10 @@ li:not(:last-child) {
 
   .section-header {
     font-size: 4vw;
+  }
+
+  .nav-bar {
+    display: none;
   }
 
   .section-subheader {
