@@ -37,7 +37,12 @@ body {
 
 ::selection {
   color: var(--secondaryColor);
-  background: var(--mainColor);
+  background: var(--mainColor)
+}
+
+.hero-text::selection, .experience-main>h1::selection, .contact-main>h1::selection, .home-main>h1::selection, .caption>p::selection, .hero-text>h1::selection, .hero-text>p::selection {
+  color: var(--mainColor);
+  background: var(--secondaryColor)
 }
 
 h1 {
