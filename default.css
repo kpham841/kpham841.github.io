@@ -1127,6 +1127,7 @@ h4 {
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: center;
+  gap: 20px;
 }
 
 .modal {
@@ -1155,7 +1156,7 @@ h4 {
 .modal-content {
   margin: 0px auto;
   display: block;
-  width: 80%;
+  width: 90%;
 }
 
 #caption {
