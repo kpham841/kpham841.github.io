@@ -35,6 +35,11 @@ body {
   height: 80%;
 }
 
+::selection {
+  color: var(--secondaryColor);
+  background: var(--mainColor);
+}
+
 h1 {
   font-size: 3.5vw;
   margin: 0;
@@ -1116,7 +1121,7 @@ h4 {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .modal {
@@ -1145,7 +1150,7 @@ h4 {
 .modal-content {
   margin: 0px auto;
   display: block;
-  width: 75%;
+  width: 80%;
 }
 
 #caption {
