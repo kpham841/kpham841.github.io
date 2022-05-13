@@ -1211,6 +1211,12 @@ h4 {
   width: 50%;
   padding-top: 20px;
   padding-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cs-pic-smaller:hover {
+  opacity: 0.7;
 }
 
 #file_struct {

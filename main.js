@@ -27,6 +27,7 @@ document.onscroll = function() {
 let modal = document.getElementById('myModal');
 // to all images -- note I'm using a class!
 let images = document.getElementsByClassName('cs-pic');
+
 // the image in the modal
 let modalImg = document.getElementById("img01");
 // and the caption in the modal
@@ -36,11 +37,10 @@ let captionText = document.getElementById("caption");
 for (let i = 0; i < images.length; i++) {
   let img = images[i];
   // and attach our click listener for this image.
-  img.onclick = function(evt) {
+  img.onclick = function(e) {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
-    modalCheck = true;
   }
 }
 
