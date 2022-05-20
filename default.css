@@ -1093,7 +1093,7 @@ h4 {
 }
 
 .section-subsubheader {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
 }
 
 .section-subheader, .section-subsubheader {
@@ -1204,11 +1204,11 @@ h4 {
   cursor: pointer;
 }
 
-
 .cs-pic-smaller {
   display: block;
   margin: 0px auto;
-  width: 50%;
+  width: 100%;
+  height: 500px;
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
@@ -1217,6 +1217,17 @@ h4 {
 
 .cs-pic-smaller:hover {
   opacity: 0.7;
+}
+
+#dd-about-page {
+  display: block;
+  margin: 0px auto;
+  width: 50%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #file_struct {
@@ -1462,6 +1473,10 @@ li:not(:last-child) {
     padding: 10px;
     font-size: 15px;
   }
+
+  .cs-pic-smaller {
+    width: 100%;
+  }
 }
 
 /* @media screen and (max-width: 400px) {
@@ -1518,4 +1533,6 @@ li:not(:last-child) {
   .section-subsubheader {
     font-size: 25px;
   }
+
+
 }

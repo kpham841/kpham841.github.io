@@ -146,11 +146,13 @@
                 the characteristics, goals, needs, problems and wants of our target demographic.</p>
             <div class="cs-flex-container">
                 <figure>
-                    <img src="images/dd_persona1.png" class="cs-pic" alt="Persona 1: Student Daniel Andrius">
+                    <img src="images/dd_persona1.png" id="dd-persona1" class="cs-pic-smaller"
+                        alt="Persona 1: Student Daniel Andrius">
                     <figcaption>Persona 1: Student Daniel Andrius</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/dd_persona2.png" class="cs-pic" alt="Persona 2: Journalist Byron Rios">
+                    <img src="images/dd_persona2.png" id="dd-persona2" class="cs-pic-smaller"
+                        alt="Persona 2: Journalist Byron Rios">
                     <figcaption>Persona 2: Journalist Byron Rios</figcaption>
                 </figure>
             </div>
@@ -355,7 +357,6 @@
                     <div id="caption"></div>
                 </div>
             </div>
-
         </div>
 
     </section>
@@ -394,13 +395,17 @@
         // and the caption in the modal
         let captionText2 = document.getElementById("caption");
         // small images
-        let imgSmall = document.getElementById('dd-about-page')
-        console.log(modal2)
-        imgSmall.onclick = function (e) {
-            modal2.style.display = "block";
-            modalImg2.src = this.src;
-            captionText2.innerHTML = this.alt;
-            modalCheck = true;
+        let imgsSmall = document.getElementsByClassName('cs-pic-smaller')
+
+        console.log(imgsSmall)
+        for (let j = 0; j < imgsSmall.length; j++) {
+            let img = imgsSmall[j]
+            img.onclick = function (e) {
+                console.log("click")
+                modal2.style.display = "block";
+                modalImg2.src = this.src;
+                captionText2.innerHTML = this.alt;
+            }
         }
         let span2 = document.getElementsByClassName("close")[0];
 
