@@ -1475,7 +1475,16 @@ li:not(:last-child) {
   }
 
   .cs-pic-smaller {
+    height: 100%;
+  }
+
+  #dd-about-page {
     width: 100%;
+  }
+
+  .cs-flex-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1502,10 +1511,6 @@ li:not(:last-child) {
 
   .about-main>h1, .experience-main>h1, .portfolio-main>h1, .contact-main>h1 {
     font-size: 40px;
-  }
-
-  .cs-flex-container {
-    flex-direction: column;
   }
 
   .modal-flex-container {
