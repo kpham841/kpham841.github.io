@@ -8,7 +8,7 @@
   --secondaryTextW: rgb(240, 240, 240);
   --secondaryTextB: rgb(46, 46, 46);
   --header-font: "Montserrat", sans-serif;
-  --p-font: "Roboto", sans-serif;
+  --p-font: "Montserrat", sans-serif;
 }
 
 /*===== BASE =====*/
@@ -103,6 +103,7 @@ a {
 li {
   font-family: var(--p-font);
   font-size: x-large;
+  line-height: 1.6;
 }
 
 .s0 {
@@ -599,14 +600,15 @@ li {
 
 .grid-item-exp>.grid-txt>p {
   font-family: var(--p-font);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--secondaryTextW);
   margin-top: 0px;
+  line-height: 1.6;
 }
 
 .grid-item-exp>.grid-txt>p {
   font-family: var(--p-font);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--secondaryTextW);
   margin-top: 0px;
 }
@@ -619,7 +621,7 @@ li {
 }
 
 .exp-job {
-  font-size: 12px;
+  font-size: 15px;
   font-family: var(--p-font);
   color: var(--secondaryTextW);
   text-transform: uppercase;
@@ -701,9 +703,10 @@ li {
 
 .grid-item>.grid-txt>p {
   font-family: var(--p-font);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--secondaryTextB);
   margin-top: 0px;
+  line-height: 1.6;
 }
 
 
@@ -721,13 +724,13 @@ li {
 
 .list-label {
   font-family: var(--p-font);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--secondaryTextB);
   margin-top: 0px;
 }
 
 .proj-job {
-  font-size: 12px;
+  font-size: 15px;
   font-family: var(--p-font);
   color: var(--mainColor);
   text-transform: uppercase;
@@ -1081,6 +1084,7 @@ h4 {
   font-family: var(--p-font);
   color: var(--mainColor);
   font-size: x-large;
+  line-height: 1.6;
 }
 
 .section-header {
@@ -1291,9 +1295,9 @@ li:not(:last-child) {
     font-size: 2.5vw;
   }
 
-  h2 {
+  /* h2 {
     font-size: 25px;
-  }
+  } */
 
   .s0 {
     display: flex;
