@@ -22,7 +22,7 @@
 
 
     <!--FAVICON-->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png">
 
     <!-- GOOGLE FONTS -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
@@ -123,7 +123,7 @@
 
             <!--PIC-->
             <div class="pic">
-                <img src="images/pic_blob_colored.png" id="profile-img" alt="meh">
+                <img src="images/pic_blob_v2.png" id="profile-img" alt="meh">
             </div>
         </div>
     </section>
@@ -146,31 +146,39 @@
             <div class="about-main">
                 <h1>About</h1>
             </div>
-            <div class="about-p">
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a senior studying cognitive science, design, and computer science
-                    at the University of California, San
-                    Diego. Through the use of software,
-                    I hope to create meaningful, user-centered technology that can have a positive impact on people's
-                    lives.
-                </p>
-                <br>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    I have experience creating web applications through my courses, personal projects, and hackathons
-                    that I've participated in. Additionally, I have experience in design and ui/ux from the various
-                    projects I've done, where I got familiar with design concepts such as research, ideation,
-                    prototyping, and testing.
-                </p>
-                <br>
-                <!--<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id="about-flex">
+                <img src="images/grad_pic.jpg" id="about-pic">
+                <div class="about-p">
+                    <p>I'm a recent graduate at the University of California, San Diego
+                        where
+                        I studied cognitive science, computer science, and design. I have a strong interest in web and
+                        software development, and ui/ux. Through the use of
+                        software,
+                        I hope to create meaningful, user-centered technology that can have a positive impact on
+                        people's
+                        lives. Currently looking for full-time software engineering/development roles!
+                    </p>
+                    <br>
+                    <p>
+                        I have experience creating web applications through my courses, personal projects, and
+                        hackathons
+                        that I've participated in. Additionally, I have experience in design and ui/ux from the various
+                        projects I've done, where I got familiar with design concepts such as research, ideation,
+                        prototyping, and testing.
+                    </p>
+                    <br>
+                    <!--<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     My projects mostly revolve around social good. It brings
                     me great fulfillment to create
                     something that is able to help many people. In the future, I hope to work on
                     projects that will work towards solving the world's biggest problems.
                 </p>-->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I'm not working, I love learning about the newest technologies,
-                    hiking, and tennis. I also like to dabble in computer
-                    peripheral customization.
-                </p>
+                    <p>When I'm not working, I love learning about the newest
+                        technologies,
+                        hiking, and tennis. I also like to dabble in computer
+                        peripheral customization.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -185,7 +193,7 @@
 
                 <div class="grid-item-exp scroll-element js-scroll slide-left" onclick="window.open('https://www.figma.com/proto/6PBjvHg83EbPnemU1C9H9e/ChronoViz-Slide-Deck---1%2F13%2F2022?page-id=0%3A1&node-id=2%3A48&viewport=241%2C48%2C0.05&scaling=scale-down&starting-point-node-id=2%3A48&show-proto-sidebar=1','_blank');
                     ">
-                    <img src="images/chronoviz.png" class="grid-img-exp" alt="ChronoViz">
+                    <img src="images/experience/chronoviz.png" class="grid-img-exp" alt="ChronoViz">
                     <div class="grid-txt">
                         <div class="grid-txt-header">
                             <h2>HXI Lab</h2>
@@ -210,7 +218,7 @@
 
                 <div class="grid-item-exp scroll-element js-scroll slide-right" onclick="window.open('https://docs.google.com/presentation/d/1OX_shl-co8K8G0xTfRZliG63CHH6meoH_kW1Q_B5F58/edit?usp=sharing','_blank');
                     ">
-                    <img src="images/smartboards.jpeg" class="grid-img-exp" alt="Smart Boards">
+                    <img src="images/experience/smartboards.jpeg" class="grid-img-exp" alt="Smart Boards">
                     <div class="grid-txt">
                         <div class="grid-txt-header">
                             <h2>Temple HCI Lab</h2>
@@ -238,7 +246,7 @@
 
                 <div class="grid-item-exp scroll-element js-scroll slide-left" onclick="window.open('https://apple-adasaurus-5fb.notion.site/Cut-Dry-Barbershop-Case-Study-c3497a6f30504bb6af2a39c903998024','_blank');
                     ">
-                    <img src="images/cutxdry.png" class="grid-img-exp" alt="Cut & Dry">
+                    <img src="images/experience/cutxdry.png" class="grid-img-exp" alt="Cut & Dry">
                     <div class="grid-txt">
                         <div class="grid-txt-header">
                             <h2>Cut & Dry Barbershop</h2>
@@ -264,7 +272,7 @@
 
                 <div class="grid-item-exp scroll-element js-scroll slide-right" onclick="window.open('https://ucsdcirclek.com/','_blank');
                     ">
-                    <img src="images/ucsdcki.png" class="grid-img-exp" alt="UCSD Circle K">
+                    <img src="images/experience/ucsdcki.png" class="grid-img-exp" alt="UCSD Circle K">
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
@@ -307,7 +315,7 @@
                 ">-->
                 <div class="grid-item scroll-element js-scroll slide-left" onclick="window.location='recipeal.html' ;">
 
-                    <img src="images/recipeal.png" class="grid-img-proj" alt="Recipeal">
+                    <img src="images/projects/recipeal.png" class="grid-img-proj" alt="Recipeal">
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
@@ -330,18 +338,39 @@
                     </div>
                 </div>
 
+
                 <div class="grid-item scroll-element js-scroll slide-right"
+                    onclick="window.location='intermingle.html' ;">
+
+                    <img src="images/projects/intermingle.png" class="grid-img-proj" alt="Intermingle">
+
+                    <div class="grid-txt">
+                        <div class="grid-txt-header">
+                            <h2 class="proj">Intermingle</h2>
+                        </div>
+                        <span class="proj-job">Web Application Prototype</span>
+                        <br>
+                        <br>
+                        <p>A web app that aims to help people prepare for interviews.</p>
+                        <br>
+                        <div class="icon-container">
+                            <box-icon type='logo' name='figma' size='30px' color=rgb(0,0,0)></box-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item scroll-element js-scroll slide-left"
                     onclick="window.location='daily-dumpling.html' ;">
-                    <img src="images/daily_dumpling2.png" class="grid-img-proj" alt="Calc"></a>
+                    <img src="images/projects/daily_dumpling2.png" class="grid-img-proj" alt="Calc"></a>
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
                             <h2 class="proj">The Daily Dumpling</h2>
                         </div>
-                        <span class="proj-job">App Prototype</span>
+                        <span class="proj-job">Mobile App Prototype</span>
                         <br>
                         <br>
-                        <p>A high-fidelity prototype for a news app that’s focused on combating misinformation.</p>
+                        <p>A mobile app that’s focused on combating misinformation.</p>
                         <br>
                         <!--
                     <p> Courses:
@@ -364,9 +393,33 @@
                     </div>
                 </div>
 
+                <div class="grid-item scroll-element js-scroll slide-right" onclick="window.open('https://kpham841.github.io/MBot/','_blank');
+                ">
+                    <img src="images/projects/mayuri_chibi2.png" class="grid-img-proj" alt="Mayuri Chibi">
+
+                    <div class="grid-txt">
+                        <div class="grid-txt-header">
+                            <h2 class="proj">MBot</h2>
+                        </div>
+                        <span class="proj-job">Social Media Bot</span>
+                        <br>
+                        <br>
+                        <p> A multi-purpose discord bot with administrative commands, mini-games, currency system,
+                            xp
+                            system, and meme generator created for entertainment purposes.</p>
+                        <!-- <br>
+                            <p>Created using Discord.js, user data stored in MongoDB, hosted on Heroku.</p> -->
+                        <br>
+                        <div class="icon-container">
+                            <box-icon type='logo' name='nodejs' size='30px' color=rgb(0,0,0)></box-icon>
+                            <box-icon type='logo' name='heroku' size='30px' color=rgb(0,0,0)></box-icon>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="grid-item scroll-element js-scroll slide-left" onclick="window.open('https://drive.google.com/file/d/1Ke7yKnKk3atoHQ1jBGTQrULKbuIth8B7/view','_blank');
                 ">
-                    <img src="images/alf.png" class="grid-img-proj" alt="Automated Laundry Folder">
+                    <img src="images/projects/alf.png" class="grid-img-proj" alt="Automated Laundry Folder">
 
 
                     <div class="grid-txt">
@@ -383,14 +436,14 @@
                         <br>
 
                         <div class="icon-container">
-                            <img src="images/arduino_icon.png" alt="arduino-icon" width='30px'>
+                            <img src="images/icons/arduino.png" alt="arduino-icon" width='30px'>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid-item scroll-element js-scroll slide-right" onclick="window.open('https://docs.google.com/document/d/1P-HcEXxwzHn_kLfXp6pZ-zg3zT3L_dOx/edit?usp=sharing&ouid=115393624349075395093&rtpof=true&sd=true','_blank');
                     ">
-                    <img src="images/redesign.png" class="grid-img-proj" alt="Redesign">
+                    <img src="images/projects/redesign.png" class="grid-img-proj" alt="Redesign">
 
 
                     <div class="grid-txt">
@@ -404,35 +457,13 @@
                     </div>
                 </div>
 
-                <div class="grid-item scroll-element js-scroll slide-left" onclick="window.open('https://kpham841.github.io/MBot/','_blank');
-            ">
-                    <img src="images/mayuri_chibi2.png" class="grid-img-proj" alt="Mayuri Chibi">
-
-                    <div class="grid-txt">
-                        <div class="grid-txt-header">
-                            <h2 class="proj">MBot</h2>
-                        </div>
-                        <span class="proj-job">Social Media Bot</span>
-                        <br>
-                        <br>
-                        <p> A multi-purpose discord bot with administrative commands, mini-games, currency system,
-                            xp
-                            system, and meme generator created for entertainment purposes.</p>
-                        <!-- <br>
-                        <p>Created using Discord.js, user data stored in MongoDB, hosted on Heroku.</p> -->
-                        <br>
-                        <div class="icon-container">
-                            <box-icon type='logo' name='nodejs' size='30px' color=rgb(0,0,0)></box-icon>
-                            <box-icon type='logo' name='heroku' size='30px' color=rgb(0,0,0)></box-icon>
-                        </div>
-                    </div>
-                </div>
 
 
 
-                <div class="grid-item scroll-element js-scroll slide-right"
+
+                <div class="grid-item scroll-element js-scroll slide-left"
                     onclick="window.open('https://github.com/kpham841/Data_Science_Projects','_blank');">
-                    <img src="images/data_science.png" class="grid-img-proj" alt="DataScience"></a>
+                    <img src="images/projects/data_science.png" class="grid-img-proj" alt="DataScience"></a>
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
@@ -466,7 +497,7 @@
                         <!--<p><b>Technologies Used:</b> React, HTML/CSS, JavaScript, Firebase, Python</p>-->
                         <div class="icon-container">
                             <box-icon type='logo' name='python' size='30px' color=rgb(0,0,0)></box-icon>
-                            <img src="images/r_icon.png" alt="r-icon" width='30px'>
+                            <img src="images/icons/r.png" alt="r-icon" width='30px'>
                         </div>
                         <!--
                         <br>
@@ -482,9 +513,9 @@
 
 
 
-                <div class="grid-item scroll-element js-scroll slide-left"
+                <div class="grid-item scroll-element js-scroll slide-right"
                     onclick="window.open('https://devpost.com/khiempham841','_blank');">
-                    <img src="images/hackathons.png" class="grid-img-proj" alt="Hackathons"></a>
+                    <img src="images/projects/hackathons.png" class="grid-img-proj" alt="Hackathons"></a>
                     <div class="grid-txt">
                         <div class="grid-txt-header">
                             <h2 class="proj">Hackathon Projects</h2>
@@ -638,9 +669,9 @@
                 </div>
             -->
 
-                <div class="grid-item scroll-element js-scroll slide-right"
+                <div class="grid-item scroll-element js-scroll slide-left"
                     onclick="window.open('https://github.com/kpham841/Web_Tools','_blank');">
-                    <img src="images/gpa_calc.png" class="grid-img-proj" alt="Calc"></a>
+                    <img src="images/projects/gpa_calc.png" class="grid-img-proj" alt="Calc"></a>
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
@@ -665,9 +696,9 @@
                     </div>
                 </div>
 
-                <div class="grid-item scroll-element js-scroll slide-left"
+                <div class="grid-item scroll-element js-scroll slide-right"
                     onclick="window.open('https://drive.google.com/drive/folders/1uisX5KCxDQYWimql9v3bgd3N3n_hGSo6?usp=sharing','_blank');">
-                    <img src="images/design_posters.png" class="grid-img-proj" alt="Calc"></a>
+                    <img src="images/projects/design_posters.png" class="grid-img-proj" alt="Calc"></a>
 
                     <div class="grid-txt">
                         <div class="grid-txt-header">
@@ -811,7 +842,7 @@
         <div class="main-container scroll-element js-scroll fade-in-bottom">
             <form id="my-form" action="https://formspree.io/f/xyyldkyz" method="POST" onsubmit="isValidForm()">
                 <div class="contact-main">
-                    <h1>Contact</h1>
+                    <h1>Let's connect</h1>
                 </div>
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -854,7 +885,7 @@
                     <box-icon name='linkedin-square' type='logo' color='white' size='30px'></box-icon>
                 </a>
                 <a href="https://devpost.com/khiempham841" target="_blank">
-                    <img src="images/devpost.png" alt="Devpost" width="30px" height="30px">
+                    <img src="images/icons/devpost.png" alt="Devpost" width="30px" height="30px">
                 </a>
             </div>
             <div class="caption">

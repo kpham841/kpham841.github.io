@@ -50,9 +50,9 @@ h1 {
   margin: 0;
 }
 
-.about-main>h1, .experience-main>h1, .portfolio-main>h1, .contact-main>h1 {
+/* .about-main>h1, .experience-main>h1, .portfolio-main>h1, .contact-main>h1 {
   font-size: 3vw;
-}
+} */
 
 h2 {
   font-size: 36px;
@@ -109,8 +109,11 @@ li {
 .s0 {
   background-color: var(--mainColor);
   /* Fix white space */
-  height: 90%;
+  height: 110%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .s0v2 {
@@ -334,7 +337,7 @@ li {
 #Home {
   display: flex;
   flex-direction: row;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   width: 100%;
 }
 
@@ -371,19 +374,16 @@ li {
   padding-bottom: 5px;
 }
 
-.pic>img {
-  position: relative;
-  width: 550px;
-  display: block;
-}
-
 #profile-img {
-  filter: grayscale(100%) brightness(120%);
+  position: relative;
+  max-width: 500px;
+  display: block;
+  filter: grayscale(100%) brightness(100%);
   transition: all 0.2s ease-in-out;
 }
 
 #profile-img:hover {
-  filter: grayscale(0%) brightness(120%);
+  filter: grayscale(0%);
 }
 
 .button {
@@ -539,13 +539,29 @@ li {
   color: var(--mainColor);
   font-family: var(--header-font);
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .about-p>p {
   color: var(--mainColor);
   font-family: var(--p-font);
-  font-size: 30px;
+  font-size: 20px;
+}
+
+#about-flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#about-pic {
+  max-width: 40%;
+  filter: grayscale(100%) brightness(100%);
+  transition: all 0.2s ease-in-out;
+}
+
+#about-pic:hover {
+  filter: grayscale(0%);
 }
 
 /*=====EXPERIENCE SECTION =====*/
@@ -1033,9 +1049,9 @@ h4 {
 /*===== CASE STUDIES =====*/
 
 /* HERO */
-#hero {
+/* #hero {
   padding-top: 5%;
-}
+} */
 
 .hero-text {
   font-family: var(--header-font);
@@ -1060,6 +1076,10 @@ h4 {
 }
 
 #recipeal-mockup {
+  width: 800px;
+}
+
+#int-mockup {
   width: 800px;
 }
 
@@ -1489,6 +1509,15 @@ li:not(:last-child) {
   .cs-flex-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  #about-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-pic {
+    max-width: 100%
   }
 }
 
