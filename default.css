@@ -97,8 +97,31 @@ a {
   text-decoration: none;
   color: var(--secondaryColor);
   font-size: 20px;
+}
+
+a.study-links {
+  color: var(--mainColor);
+  font-family: var(--p-font);
+  font-size: 20px;
+}
+
+a.case-study-links {
+  color: var(--mainColor);
+  font-family: var(--p-font);
+  font-size: x-large;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-size: 20px;
   font-weight: bold;
 }
+
+.button {
+  font-weight: bold;
+}
+
 
 li {
   font-family: var(--p-font);
@@ -974,6 +997,7 @@ input[type="submit"]:hover {
   font-family: var(--header-font);
   color: var(--secondaryColor);
   font-weight: bold;
+  text-align: center;
 }
 
 /*
@@ -1342,6 +1366,10 @@ li:not(:last-child) {
   }
 
   .about-p>p {
+    font-size: 23px;
+  }
+
+  a.study-links {
     font-size: 23px;
   }
 
