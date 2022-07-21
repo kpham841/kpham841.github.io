@@ -374,9 +374,7 @@ li {
 }
 
 .main-container {
-  margin: 0 auto;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: 0 23% 0 23%;
 }
 
 .main-containerProj {
@@ -573,7 +571,7 @@ li {
 
 #about-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 50px;
 }
 
