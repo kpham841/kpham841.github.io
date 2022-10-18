@@ -374,7 +374,7 @@ li {
 }
 
 .main-container {
-  margin: 0 23% 0 23%;
+  margin: 0 20% 0 20%;
 }
 
 .main-containerProj {
@@ -576,7 +576,10 @@ li {
 }
 
 #about-pic {
-  max-width: 40%;
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  max-height: 600px;
   filter: grayscale(100%) brightness(100%);
   transition: all 0.2s ease-in-out;
 }
