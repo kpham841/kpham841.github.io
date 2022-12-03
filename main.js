@@ -1,116 +1,116 @@
 // MOBILE NAV
 $(document).ready(function () {
-  $('.button1').click(function () {
-    $('.mobile_nav').toggleClass('active')
-    $('.button1').toggleClass('btn')
-  })
+    $('.button1').click(function () {
+        $('.mobile_nav').toggleClass('active')
+        $('.button1').toggleClass('btn')
+    })
 })
 
 // Hide navbar when scrolling down
-let prevScrollpos = window.scrollY;
-document.onscroll = function() {
-  let currentScrollPos = window.scrollY;
-  // If scrolling up
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".nav-bar").style.top = "0";
-  // If scrolling down
-  } else {
-    document.querySelector(".nav-bar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
+let prevScrollpos = window.scrollY
+document.onscroll = function () {
+    let currentScrollPos = window.scrollY
+    // If scrolling up
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector('.nav-bar').style.top = '0'
+        // If scrolling down
+    } else {
+        document.querySelector('.nav-bar').style.top = '-100px'
+    }
+    prevScrollpos = currentScrollPos
 }
 
-
-
-// Modal 
+// Modal
 // create references to the modal...
-let modal = document.getElementById('myModal');
+let modal = document.getElementById('myModal')
 // to all images -- note I'm using a class!
-let images = document.getElementsByClassName('cs-pic');
+let images = document.getElementsByClassName('cs-pic')
 
 // the image in the modal
-let modalImg = document.getElementById("img01");
+let modalImg = document.getElementById('img01')
 // and the caption in the modal
-let captionText = document.getElementById("caption");
+let captionText = document.getElementById('caption')
 
 // Go through all of the images with our custom class
 for (let i = 0; i < images.length; i++) {
-  let img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(e) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
+    let img = images[i]
+    // and attach our click listener for this image.
+    img.onclick = function (e) {
+        modal.style.display = 'block'
+        modalImg.src = this.src
+        captionText.innerHTML = this.alt
+    }
 }
 
-let span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName('close')[0]
 
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = 'none'
 }
-
 
 // SCROLL UP BUTTON
 let mybutton = document.getElementById('myBtn')
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-  scrollFunction()
+    scrollFunction()
 }
 
-function scrollFunction () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = 'block'
-  } else {
-    mybutton.style.display = 'none'
-  }
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = 'block'
+    } else {
+        mybutton.style.display = 'none'
+    }
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction () {
-  document.body.scrollTop = 0
-  document.documentElement.scrollTop = 0
+function topFunction() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
 }
 
 // Invalid Form
-function isValidForm () {
-  let status = document.getElementById('status')
-  if (
-    document.getElementById('name').value == '' ||
-    document.getElementById('email').value == '' ||
-    document.getElementById('message').value == ''
-  ) {
-    alert('Please fill in all empty fields.')
-    return false
-  } else {
-    return true
-  }
+function isValidForm() {
+    let status = document.getElementById('status')
+    if (
+        document.getElementById('name').value == '' ||
+        document.getElementById('email').value == '' ||
+        document.getElementById('message').value == ''
+    ) {
+        alert('Please fill in all empty fields.')
+        return false
+    } else {
+        return true
+    }
 }
 
 // Form
 let form = document.getElementById('my-form')
 
-async function handleSubmit (event) {
-  event.preventDefault()
-  let status = document.getElementById('status')
-  let data = new FormData(event.target)
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: {
-      Accept: 'application/json'
-    }
-  })
-    .then(response => {
-      status.classList.add('success')
-      status.innerHTML = 'Successfully Submitted'
-      form.reset()
+async function handleSubmit(event) {
+    event.preventDefault()
+    let status = document.getElementById('status')
+    let data = new FormData(event.target)
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            Accept: 'application/json',
+        },
     })
-    .catch(error => {
-      status.classList.add('error')
-      status.innerHTML = 'Error submitting'
-    })
+        .then((response) => {
+            status.classList.add('success')
+            status.innerHTML = 'Successfully Submitted'
+            form.reset()
+        })
+        .catch((error) => {
+            status.classList.add('error')
+            status.innerHTML = 'Error submitting'
+        })
 }
 form.addEventListener('submit', handleSubmit)
 
@@ -118,40 +118,41 @@ form.addEventListener('submit', handleSubmit)
 const scrollElements = document.querySelectorAll('.js-scroll')
 
 const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top
+    const elementTop = el.getBoundingClientRect().top
 
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  )
+    return (
+        elementTop <=
+        (window.innerHeight || document.documentElement.clientHeight) / dividend
+    )
 }
 
-const elementOutofView = el => {
-  const elementTop = el.getBoundingClientRect().top
+const elementOutofView = (el) => {
+    const elementTop = el.getBoundingClientRect().top
 
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  )
+    return (
+        elementTop >
+        (window.innerHeight || document.documentElement.clientHeight)
+    )
 }
 
-const displayScrollElement = element => {
-  element.classList.add('scrolled')
+const displayScrollElement = (element) => {
+    element.classList.add('scrolled')
 }
 
-const hideScrollElement = element => {
-  element.classList.remove('scrolled')
+const hideScrollElement = (element) => {
+    element.classList.remove('scrolled')
 }
 
 const handleScrollAnimation = () => {
-  scrollElements.forEach(el => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el)
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  })
+    scrollElements.forEach((el) => {
+        if (elementInView(el, 1.25)) {
+            displayScrollElement(el)
+        } else if (elementOutofView(el)) {
+            hideScrollElement(el)
+        }
+    })
 }
 
 window.addEventListener('scroll', () => {
-  handleScrollAnimation()
+    handleScrollAnimation()
 })
