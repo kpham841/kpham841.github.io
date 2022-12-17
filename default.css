@@ -1436,7 +1436,7 @@ li:not(:last-child) {
         margin-right: 10%;
     }
 
-    .grid-container-projects {
+    .grid-container-projects, .grid-container-experience {
         display: grid;
         grid-template-columns: auto;
         margin-left: auto;
@@ -1626,5 +1626,10 @@ li:not(:last-child) {
 
     .section-subsubheader {
         font-size: 25px;
+    }
+
+    .grid-item, .grid-item-exp {
+        width: 70%;
+        margin: 0 auto;
     }
 }
