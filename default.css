@@ -613,8 +613,8 @@ li {
     display: grid;
     justify-content: center;
     grid-template-columns: 500px 500px;
-    row-gap: 50px;
-    column-gap: 100px;
+    row-gap: 75px;
+    column-gap: 75px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -704,8 +704,8 @@ li {
     display: grid;
     justify-content: center;
     grid-template-columns: 500px 500px;
-    row-gap: 50px;
-    column-gap: 100px;
+    row-gap: 75px;
+    column-gap: 75px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -1443,22 +1443,9 @@ li:not(:last-child) {
         margin-right: auto;
     }
 
-    .grid-item {
-        /*
-    background: #505050;
-    /*border-radius: 10px;
-    margin: 0;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    */
-        width: 300px;
-    }
-
-    .grid-item-exp {
-        width: 300px;
+    .grid-item, .grid-item-exp {
+        width: 70%;
+        margin: 0 auto;
     }
 
     .arrow {
@@ -1626,10 +1613,5 @@ li:not(:last-child) {
 
     .section-subsubheader {
         font-size: 25px;
-    }
-
-    .grid-item, .grid-item-exp {
-        width: 70%;
-        margin: 0 auto;
     }
 }
