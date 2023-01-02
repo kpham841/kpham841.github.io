@@ -1,837 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-PJZC9KDYKG"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || []
-            function gtag() {
-                dataLayer.push(arguments)
-            }
-            gtag('js', new Date())
 
-            gtag('config', 'G-PJZC9KDYKG')
-        </script>
-        <!-- End Google Tag Manager -->
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJZC9KDYKG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        gtag('js', new Date())
 
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
-        />
-        <title>Intermingle</title>
-        <meta
-            name="description"
-            content="A high-fidelity web app prototype that aims to help people prepare for interviews by connecting them with professionals."
-        />
-        <meta name="Author" content="Khiem Pham" />
+        gtag('config', 'G-PJZC9KDYKG')
+    </script>
+    <!-- End Google Tag Manager -->
 
-        <!--FAVICON-->
-        <link
-            rel="icon"
-            type="image/png"
-            href="images/favicon/intermingle_favicon.png"
-        />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+    <title>Intermingle</title>
+    <meta name="description"
+        content="A high-fidelity web app prototype that aims to help people prepare for interviews by connecting them with professionals." />
+    <meta name="Author" content="Khiem Pham" />
 
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans&family=Roboto&display=swap"
-            rel="stylesheet"
-        />
+    <!--FAVICON-->
+    <link rel="icon" type="image.webp" href="images/favicon/intermingle_favicon.png" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="default.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet" />
 
-        <!-- BOXICONS -->
-        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="default.css" />
 
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"
-        ></script>
-    </head>
+    <!-- BOXICONS -->
+    <!-- <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-    <body>
-        <!-- SCROLL TO TOP BUTTON -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <div class="arrow-up">
-                <span></span>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- SCROLL TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <div class="arrow-up">
+            <span></span>
+        </div>
+    </button>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" id="nav-link-home">Home</a>
+                <a href="index.html#Projects" class="nav-link" id="nav-link-proj">Other Projects</a>
             </div>
-        </button>
-        <header>
-            <!-- NAVBAR -->
-            <nav class="nav-bar">
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link" id="nav-link-home"
-                        >Home</a
-                    >
-                    <a
-                        href="index.html#Projects"
-                        class="nav-link"
-                        id="nav-link-proj"
-                        >Other Projects</a
-                    >
-                </div>
 
-                <div class="mobile_nav">
-                    <ul>
-                        <li>
-                            <a
-                                href="index.html"
-                                class="nav-link"
-                                id="nav-link-home-mob"
-                                >Home</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="index.html#Projects"
-                                class="nav-link"
-                                id="nav-link-proj-mob"
-                                >Other Projects</a
-                            >
-                        </li>
-                    </ul>
-
-                    <div class="button1" id="hello">
-                        <span></span>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <section class="s0" id="hero">
-            <div class="hero-container" style="padding-top: 100px">
-                <div class="hero-text">
-                    <h1>Intermingle</h1>
-                    <p>Prepare for interviews the right way.</p>
-                    <br />
-                    <a
-                        href="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=529%3A120&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=529%3A120&show-proto-sidebar=1"
-                        target="_blank"
-                    >
-                        <i class="bx bxs-like bx-lg"></i>
-                        <box-icon
-                            type="logo"
-                            name="figma"
-                            color="white"
-                            size="35px"
-                        ></box-icon>
-                    </a>
-                    <a
-                        href="https://www.kickstarter.com/projects/intermingle/1455805503?ref=4yjcmb&token=1652e6f7"
-                        target="_blank"
-                    >
-                        <i class="bx bxs-like bx-lg"></i>
-                        <box-icon
-                            type="logo"
-                            name="kickstarter"
-                            color="white"
-                            size="35px"
-                        ></box-icon>
-                    </a>
-                </div>
-                <img
-                    src="images/intermingle/mockup.png"
-                    alt="int-mockup"
-                    id="int-mockup"
-                />
-            </div>
-        </section>
-
-        <!-- ARROW -->
-        <section class="s0v2" id="Home">
-            <a href="#overview" class="nav-link" id="about">
-                <div class="arrow-down">
-                    <span> </span>
-                </div>
-            </a>
-        </section>
-
-        <section class="s2" id="overview">
-            <div class="section-container">
-                <h1 class="section-header">Overview</h1>
-                <p>
-                    Intermingle is a high-fidelity web application prototype
-                    that helps people prepare for their interviews by connecting
-                    interviewees with professionals that can offer interview
-                    services such as mock interviews and career guidance.
-                </p>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Problem Statement</h1>
-                <p>
-                    People looking to enter the workforce need a way to prepare
-                    for their interviews that will give them the best chance of
-                    landing their desired internship/full-time job.
-                </p>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Background Information</h1>
-                <p>
-                    Interviews can be a source of anxiety and nervousness for
-                    many people. Preparing for interviews can be equally as
-                    daunting. With all the interview preparation resources out
-                    there, how do you find one that will truly prepare you for
-                    your interview? Many interview preparation resources out
-                    there are helpful for giving general advice for company
-                    interviews, but many of them don’t provide enough
-                    information for a specific interview. This can leave you
-                    feeling unprepared going into your interview. This is why my
-                    team and I created Intermingle, a web application that aims
-                    to help people prepare and gain confidence for their
-                    interview by connecting them with professionals that have
-                    gone through the process for that interview.
-                </p>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Research</h1>
-                <h2 class="section-subheader">SET Analysis</h2>
-                <p>
-                    Our initial SET analysis was used to ideate on a product gap
-                    in the general market. We found that although there are many
-                    interview preparation resources available, most of them
-                    didn’t provide enough information for a specific interview.
-                    Once we finalized on our idea, we narrowed our SET analysis
-                    to the interview preparation market.
-                </p>
-                <figure>
-                    <img
-                        src="images/intermingle/set_anal_v1.png"
-                        id="int-set1"
-                        class="cs-pic"
-                        alt="SET Analysis Version 1"
-                    />
-                    <figcaption>SET Analysis Version 1</figcaption>
-                </figure>
-                <figure>
-                    <img
-                        src="images/intermingle/set_anal_v2.png"
-                        id="int-set2"
-                        class="cs-pic"
-                        alt="SET Analysis Version 2"
-                    />
-                    <figcaption>SET Analysis Version 2</figcaption>
-                </figure>
-                <figure>
-                    <img
-                        src="images/intermingle/set_anal_v3.png"
-                        id="int-set3"
-                        class="cs-pic"
-                        alt="SET Analysis Version 3"
-                    />
-                    <figcaption>SET Analysis Version 3</figcaption>
-                </figure>
-                <br />
-                <h2 class="section-subheader">Survey</h2>
-                <p>
-                    We sent out a survey to online interview communities on
-                    Discord and Reddit to gain insight on how people currently
-                    prepare for interviews, people’s current feeling towards the
-                    interview process, and what aspects of the interview process
-                    people are confident / have difficulty with. This
-                    information helped us ideate on the types of features we
-                    want to focus on for our product.
-                </p>
-                <br />
-                <p>From our survey, we found:</p>
-                <ul id="cs-ol" style="list-style-position: inside">
+            <div class="mobile_nav">
+                <ul>
                     <li>
-                        <b>11/16</b>
-                        respondents felt
-                        <b>nervous/anxious</b>
-                        leading up to an interview.
+                        <a href="index.html" class="nav-link" id="nav-link-home-mob">Home</a>
                     </li>
                     <li>
-                        <b>12/16</b> had difficulty
-                        <b>maintaining positive body language (eye contact)</b>
-                        or
-                        <b>answering questions during interviews</b>.
+                        <a href="index.html#Projects" class="nav-link" id="nav-link-proj-mob">Other Projects</a>
                     </li>
                 </ul>
-                <br />
-                <h2 class="section-subheader">Value Flow Chart</h2>
-                <p>
-                    This helped us visualize the existing interview preparation
-                    market and where our product would fit in. We went through
-                    various iterations and narrowed down the chart to the
-                    essential stakeholders and services. Our product would exist
-                    between the Interviewees and Professionals, as our service
-                    connects the Interviewees to the Professionals.
-                </p>
-                <div class="cs-flex-container">
-                    <figure>
-                        <img
-                            src="images/intermingle/value_v1.png"
-                            id="int-val1"
-                            class="cs-pic"
-                            alt="Value Chart w/o Solution Version 1"
-                        />
-                        <figcaption>
-                            Value Chart w/o Solution Version 1
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="images/intermingle/value_v2.png"
-                            id="int-val2"
-                            class="cs-pic"
-                            alt="Value Chart w/ Solution Version 1"
-                        />
-                        <figcaption>
-                            Value Chart w/ Solution Version 1
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="cs-flex-container">
-                    <figure>
-                        <img
-                            src="images/intermingle/simp_value_v1.png"
-                            id="int-simpval1"
-                            class="cs-pic"
-                            alt="Value Chart w/o Solution Version 2"
-                        />
-                        <figcaption>
-                            Value Chart w/o Solution Version 2
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="images/intermingle/simp_value_v2.png"
-                            id="int-simpval2"
-                            class="cs-pic"
-                            alt="Value Chart w/ Solution Version 2"
-                        />
-                        <figcaption>
-                            Value Chart w/ Solution Version 2
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Feature Ideation</h1>
-                <h2 class="section-subheader">Storyboards</h2>
-                <p>
-                    From our survey results, we brainstormed features of our
-                    product that could help with our user’s problems, such as
-                    feeling anxious during an interview and maintaining positive
-                    body language. We created storyboards for each of the
-                    features and conducted interviews with users to gain insight
-                    on which features seem more valuable to incorporate. The top
-                    3 features our users identified with were
-                    <b
-                        >Speed Dating, User Generated Interviews, and Body
-                        Tracker Bot.</b
-                    >
-                </p>
-                <figure>
-                    <img
-                        src="images/intermingle/sb_v1.png"
-                        id="int-sb1"
-                        class="cs-pic"
-                        alt="Speed Dating"
-                    />
-                    <figcaption>Speed Dating</figcaption>
-                </figure>
-                <figure>
-                    <img
-                        src="images/intermingle/sb_v2.png"
-                        id="int-sb2"
-                        class="cs-pic"
-                        alt="User Generated Interviews"
-                    />
-                    <figcaption>User Generated Interviews</figcaption>
-                </figure>
-                <figure>
-                    <img
-                        src="images/intermingle/sb_v3.png"
-                        id="int-sb3"
-                        class="cs-pic"
-                        alt="Body Tracker Bot"
-                    />
-                    <figcaption>Body Tracker Bot</figcaption>
-                </figure>
-                <h2 class="section-subheader">Initial Idea and Pivot</h2>
-                <p>
-                    Our initial product idea focused on the idea of
-                    speed-dating, where interviewees can meet with each other
-                    and practice common interview questions that we provide.
-                    However, we received feedback that there were already
-                    pre-existing services similar to this idea, such as “Pramp”.
-                    We pivoted the main feature of our product to allowing
-                    interviewees to hire professionals to help them with their
-                    interviews. Although hiring professionals/tutors isn’t an
-                    entirely new concept, our product differs as it’s more
-                    <b>focused on interview preparation </b>
-                    rather than general subject areas, and it helps interviewees
-                    prepare for
-                    <b>specific</b> interviews for companies.
-                </p>
-                <br />
-                <h2 class="section-subheader">Competitive Analysis</h2>
-                <p>
-                    Our initial competitive analysis compared various interview
-                    preparation websites. After our pivot, we started comparing
-                    similar websites that allow users to hire professionals.
-                </p>
-                <figure>
-                    <img
-                        src="images/intermingle/comp_anal_v1.png"
-                        id="int-comp1"
-                        class="cs-pic"
-                        alt="Competitive Analysis Version 1"
-                    />
-                    <figcaption>Competitive Analysis Version 1</figcaption>
-                </figure>
-                <figure>
-                    <img
-                        src="images/intermingle/comp_anal_v2.png"
-                        id="int-comp2"
-                        class="cs-pic"
-                        alt="Competitive Analysis Version 2"
-                    />
-                    <figcaption>Competitive Analysis Version 2</figcaption>
-                </figure>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Design</h1>
-                <h2 class="section-subheader">Low-Fidelity Prototype</h2>
-                <h3 class="section-subsubheader">Initial Iterations</h3>
-                <p>
-                    We focused on implementing the basic structure of our
-                    website, which included sign-up pages, home pages, reviews,
-                    and scheduling interviews.
-                </p>
-                <iframe
-                    title="Lofi Prototype First Iteration"
-                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
-                    width="100%"
-                    height="800"
-                    src="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=256%3A2&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=256%3A2&show-proto-sidebar=1"
-                    allowfullscreen
-                ></iframe>
-                <p>
-                    We conducted user testing to identify any improvements we
-                    could make. Our users provided us with an extensive list of
-                    feedback, the most notable ones being a way to
-                    <b>message past interviewees</b>
-                    so they can discuss their experience with an interviewer,
-                    interviewers should be able to
-                    <b>set different rates for different services</b>,
-                    <b>simplifying analytics</b>
-                    to only important information, and
-                    <b
-                        >giving the user a way to specify which services they
-                        want from the interviewer</b
-                    >.
-                </p>
-                <h3 class="section-subsubheader">Final Iteration</h3>
-                <p>
-                    We took our user's suggestions and incorporated them into
-                    our final lofi.
-                </p>
-                <br />
-                <p>
-                    We included a
-                    <b>message button</b> and <b>service tag</b> on reviews.
-                </p>
-                <div class="cs-flex-container">
-                    <figure>
-                        <img
-                            src="images/intermingle/reviews_msg_before.png"
-                            id="int-rev1"
-                            class="cs-pic"
-                            alt="Reviews Before"
-                        />
-                        <figcaption>Reviews Before</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="images/intermingle/reviews_msg_after.png"
-                            id="int-rev2"
-                            class="cs-pic"
-                            alt="Reviews After"
-                        />
-                        <figcaption>Reviews After</figcaption>
-                    </figure>
-                </div>
-                <p>
-                    We allowed interviewers to
-                    <b>set different rates for different services</b>.
-                </p>
-                <div class="cs-flex-container">
-                    <figure>
-                        <img
-                            src="images/intermingle/set_wage_before.png"
-                            id="int-wage1"
-                            class="cs-pic"
-                            alt="Set Wage Before"
-                        />
-                        <figcaption>Set Wage Before</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="images/intermingle/set_wage_after.png"
-                            id="int-wage2"
-                            class="cs-pic"
-                            alt="Set Wage After"
-                        />
-                        <figcaption>Set Wage After</figcaption>
-                    </figure>
-                </div>
-                <p>
-                    We
-                    <b>simplified the analytics</b>
-                    for interviewers.
-                </p>
-                <div class="cs-flex-container">
-                    <figure>
-                        <img
-                            src="images/intermingle/analytics_before.png"
-                            id="int-anal1"
-                            class="cs-pic"
-                            alt="Analytics Before"
-                        />
-                        <figcaption>Analytics Before</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="images/intermingle/analytics_after.png"
-                            id="int-anal2"
-                            class="cs-pic"
-                            alt="Analytics After"
-                        />
-                        <figcaption>Analytics After</figcaption>
-                    </figure>
-                </div>
-                <p>
-                    We added <b>services</b> when booking a session with an
-                    interviewer.
-                </p>
-                <div class="cs-flex-container">
-                    <figure>
-                        <img
-                            src="images/intermingle/serv_before.png"
-                            id="int-serv1"
-                            class="cs-pic"
-                            alt="Booking Session Before"
-                        />
-                        <figcaption>Booking Session Before</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="images/intermingle/serv_after.png"
-                            id="int-serv2"
-                            class="cs-pic"
-                            alt="Booking Session After"
-                        />
-                        <figcaption>Booking Session After</figcaption>
-                    </figure>
-                </div>
-                <iframe
-                    title="Lofi Prototype Final Iteration"
-                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
-                    width="100%"
-                    height="800"
-                    src="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=459%3A81&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=459%3A81&show-proto-sidebar=1"
-                    allowfullscreen
-                ></iframe>
-                <h2 class="section-subheader">Moodboard/Style Guide</h2>
-                <p>
-                    As a service that will be used to help people prepare for
-                    interviews, we wanted our app to convey certain adjectives
-                    such as trustworthy, confidence, professional, and
-                    opportunity.
-                </p>
-                <figure>
-                    <img
-                        src="images/intermingle/moodboard.png"
-                        id="int-moodboard"
-                        class="cs-pic"
-                        alt="Moodboard"
-                    />
-                    <figcaption>Moodboard</figcaption>
-                </figure>
-                <p>
-                    For our fonts, we used
-                    <b>Montserrat</b> for both the headers and body text, as it
-                    offers a <b>sophisticated and modern look</b>. For our
-                    colors, we utilized
-                    <b>bright blue to make elements pop</b>
-                    while combining it with
-                    <b>black and white for a reserved, modern look</b>. For our
-                    logo, we underwent many design ideas and had various visuals
-                    we wanted to incorporate such as chat bubbles, ties, and
-                    grad caps . However, we ended up using a
-                    <b>simple, reserved logo</b>
-                    to fit a more
-                    <b>professional theme</b>.
-                </p>
-                <figure>
-                    <img
-                        src="images/intermingle/style_guide.png"
-                        id="int-styleguide"
-                        class="cs-pic"
-                        alt="Style Guide"
-                    />
-                    <figcaption>Style Guide</figcaption>
-                </figure>
-                <h2 class="section-subheader">High-Fidelity Prototype</h2>
-                <p>
-                    We incorporated our style guide into our lofi to create our
-                    hifi.
-                </p>
-                <iframe
-                    title="Hifi Prototype"
-                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
-                    width="100%"
-                    height="800"
-                    src="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=529%3A120&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=529%3A120&show-proto-sidebar=1"
-                    allowfullscreen
-                ></iframe>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Kickstarter</h1>
-                <p>
-                    We created a
-                    <a
-                        href="https://www.kickstarter.com/projects/intermingle/1455805503?ref=4yjcmb&token=1652e6f7"
-                        class="case-study-links"
-                        target="_blank"
-                        ><u>Kickstarter</u></a
-                    >
-                    page that can be used to pitch our idea to potential
-                    investors. This involved stating how our service works for
-                    interviewers and interviewees and creating crowdfunding
-                    rewards for our backers.
-                </p>
-                <figure>
-                    <img
-                        src="images/intermingle/rewards.png"
-                        id="int-rewards"
-                        class="cs-pic"
-                        alt="Rewards"
-                    />
-                    <figcaption>Rewards</figcaption>
-                </figure>
-                <figure>
-                    <img
-                        src="images/intermingle/kickstart_scroll.gif"
-                        id="int-scroll"
-                        class="cs-pic"
-                        alt="Campaign"
-                    />
-                    <figcaption>Campaign</figcaption>
-                </figure>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">7-month Budget</h1>
-                <p>
-                    We calculated a budget plan that detailed our expenses,
-                    projected interview growth each month, revenue, and total
-                    net profit to see how feasable our business model was.
-                </p>
-                <br />
-                <ul id="cs-ul">
-                    <li>
-                        <b>Expenses: </b>The majority of it will come from
-                        design/development team and CEO/CTO salaries. We also
-                        accounted for website maintenance and marketing, as well
-                        as initial business expenses such as legal fees and
-                        insurance.
-                    </li>
-                    <img
-                        src="images/intermingle/expenses1.png"
-                        id="int-expenses1"
-                        class="cs-pic"
-                        alt="Expenses Pie Chart Breakdown"
-                    />
-                    <img
-                        src="images/intermingle/expenses2.png"
-                        id="int-expenses2"
-                        class="cs-pic"
-                        alt="Expenses Spread Sheet Breakdown"
-                    />
-                    <li>
-                        <b>Interview Growth: </b>We estimated we'll intially
-                        start with around 500 interviews. We predict that the
-                        number of interviews will grow by around 60 every month.
-                        By the end of the 7 months, we should have a total of
-                        860 interviews.
-                    </li>
-                    <img
-                        src="images/intermingle/interview_growth.png"
-                        id="int-growth"
-                        class="cs-pic"
-                        alt="Interview Growth"
-                    />
-                    <li>
-                        <b>Revenue: </b>We’ll be collecting a 20% service fee
-                        from each interview. We estimate that users will pay
-                        around $50 per interview with an average of 1.5 hours
-                        per interview. Based on our interview growth of +60
-                        every month, we’ll be making $900 dollars every month.
-                    </li>
-                    <img
-                        src="images/intermingle/revenue.png"
-                        id="int-revenue"
-                        class="cs-pic"
-                        alt="Revenue"
-                    />
-                    <li>
-                        <b>Net Profit: </b>
-                        By taking the total revenue and subtracting it by the
-                        total expenses, we'll be in the negative for the first 6
-                        months, but become positive by our 7th month.
-                    </li>
-                    <img
-                        src="images/intermingle/net_profit_1.png"
-                        id="int-netprofit1"
-                        class="cs-pic"
-                        alt="Net Profit Line Chart"
-                    />
-                    <img
-                        src="images/intermingle/net_profit_2.png"
-                        id="int-netprofit2"
-                        class="cs-pic"
-                        alt="Net Profit Spread Sheet"
-                    />
-                </ul>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Video Pitch</h1>
-                <iframe
-                    width="100%"
-                    height="500px"
-                    src="https://www.youtube.com/embed/TOeDUlC84Qw"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </div>
-            <div class="section-container">
-                <h1 class="section-header">Results</h1>
-                <p>
-                    Our pitch was well received by fellow classmates and
-                    professors. They found the idea of consulting with
-                    professionals with experience to specific interviews to be
-                    unique and helps address the difficulties associated with
-                    interview preparation.
-                </p>
-                <br />
-                <p>
-                    Our team was ranked
-                    <b>#2</b> out of 11 teams based on peer evaluation.
-                </p>
-                <br />
-            </div>
 
-            <div class="section-container">
-                <h1 class="section-header">Next Steps</h1>
-                <p>
-                    If we were to continue working on this project, we would
-                    work on:
-                </p>
+                <div class="button1" id="hello">
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="s0" id="hero">
+        <div class="hero-container" style="padding-top: 100px">
+            <div class="hero-text">
+                <h1>Intermingle</h1>
+                <p>Prepare for interviews the right way.</p>
                 <br />
-                <ul id="cs-ul">
-                    <li>
-                        Conducting further user testing on hi-fi prototypes to
-                        refine design and adjust features.
-                    </li>
-                    <li>Improve budget plans to reflect more accurately.</li>
-                    <li>Market the product to raise funds via Kickstarter.</li>
-                </ul>
+                <a href="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=529%3A120&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=529%3A120&show-proto-sidebar=1"
+                    target="_blank" aria-label="Figma">
+                    <i class="bx bxs-like bx-lg"></i>
+                    <box-icon type="logo" name="figma" color="white" size="35px"></box-icon>
+                </a>
+                <a href="https://www.kickstarter.com/projects/intermingle/1455805503?ref=4yjcmb&token=1652e6f7 "
+                    target="_blank" aria-label="Kickstart">
+                    <i class="bx bxs-like bx-lg"></i>
+                    <box-icon type="logo" name="kickstarter" color="white" size="35px"></box-icon>
+                </a>
             </div>
+            <img src="images/intermingle/mockup.webp" alt="int-mockup" id="int-mockup" />
+        </div>
+    </section>
 
-            <div id="myModal" class="modal">
-                <div class="modal-flex-container">
-                    <div class="close">&times;</div>
-                    <div>
-                        <img class="modal-content" id="img01" />
-                        <div id="caption"></div>
-                    </div>
+    <!-- ARROW -->
+    <section class="s0v2" id="Home">
+        <a href="#overview" class="nav-link" id="about" aria-label="Overview">
+            <div class="arrow-down">
+                <span> </span>
+            </div>
+        </a>
+    </section>
+
+    <section class="s2" id="overview">
+        <div class="section-container">
+            <h1 class="section-header">Overview</h1>
+            <p>
+                Intermingle is a high-fidelity web application prototype
+                that helps people prepare for their interviews by connecting
+                interviewees with professionals that can offer interview
+                services such as mock interviews and career guidance.
+            </p>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Problem Statement</h1>
+            <p>
+                People looking to enter the workforce need a way to prepare
+                for their interviews that will give them the best chance of
+                landing their desired internship/full-time job.
+            </p>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Background Information</h1>
+            <p>
+                Interviews can be a source of anxiety and nervousness for
+                many people. Preparing for interviews can be equally as
+                daunting. With all the interview preparation resources out
+                there, how do you find one that will truly prepare you for
+                your interview? Many interview preparation resources out
+                there are helpful for giving general advice for company
+                interviews, but many of them don’t provide enough
+                information for a specific interview. This can leave you
+                feeling unprepared going into your interview. This is why my
+                team and I created Intermingle, a web application that aims
+                to help people prepare and gain confidence for their
+                interview by connecting them with professionals that have
+                gone through the process for that interview.
+            </p>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Research</h1>
+            <h2 class="section-subheader">SET Analysis</h2>
+            <p>
+                Our initial SET analysis was used to ideate on a product gap
+                in the general market. We found that although there are many
+                interview preparation resources available, most of them
+                didn’t provide enough information for a specific interview.
+                Once we finalized on our idea, we narrowed our SET analysis
+                to the interview preparation market.
+            </p>
+            <figure>
+                <img src="images/intermingle/set_anal_v1.webp" id="int-set1" class="cs-pic"
+                    alt="SET Analysis Version 1" />
+                <figcaption>SET Analysis Version 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/intermingle/set_anal_v2.webp" id="int-set2" class="cs-pic"
+                    alt="SET Analysis Version 2" />
+                <figcaption>SET Analysis Version 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/intermingle/set_anal_v3.webp" id="int-set3" class="cs-pic"
+                    alt="SET Analysis Version 3" />
+                <figcaption>SET Analysis Version 3</figcaption>
+            </figure>
+            <br />
+            <h2 class="section-subheader">Survey</h2>
+            <p>
+                We sent out a survey to online interview communities on
+                Discord and Reddit to gain insight on how people currently
+                prepare for interviews, people’s current feeling towards the
+                interview process, and what aspects of the interview process
+                people are confident / have difficulty with. This
+                information helped us ideate on the types of features we
+                want to focus on for our product.
+            </p>
+            <br />
+            <p>From our survey, we found:</p>
+            <ul id="cs-ol" style="list-style-position: inside">
+                <li>
+                    <b>11/16</b>
+                    respondents felt
+                    <b>nervous/anxious</b>
+                    leading up to an interview.
+                </li>
+                <li>
+                    <b>12/16</b> had difficulty
+                    <b>maintaining positive body language (eye contact)</b>
+                    or
+                    <b>answering questions during interviews</b>.
+                </li>
+            </ul>
+            <br />
+            <h2 class="section-subheader">Value Flow Chart</h2>
+            <p>
+                This helped us visualize the existing interview preparation
+                market and where our product would fit in. We went through
+                various iterations and narrowed down the chart to the
+                essential stakeholders and services. Our product would exist
+                between the Interviewees and Professionals, as our service
+                connects the Interviewees to the Professionals.
+            </p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/intermingle/value_v1.webp" id="int-val1" class="cs-pic"
+                        alt="Value Chart w/o Solution Version 1" />
+                    <figcaption>
+                        Value Chart w/o Solution Version 1
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/intermingle/value_v2.webp" id="int-val2" class="cs-pic"
+                        alt="Value Chart w/ Solution Version 1" />
+                    <figcaption>
+                        Value Chart w/ Solution Version 1
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/intermingle/simp_value_v1.webp" id="int-simpval1" class="cs-pic"
+                        alt="Value Chart w/o Solution Version 2" />
+                    <figcaption>
+                        Value Chart w/o Solution Version 2
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/intermingle/simp_value_v2.webp" id="int-simpval2" class="cs-pic"
+                        alt="Value Chart w/ Solution Version 2" />
+                    <figcaption>
+                        Value Chart w/ Solution Version 2
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Feature Ideation</h1>
+            <h2 class="section-subheader">Storyboards</h2>
+            <p>
+                From our survey results, we brainstormed features of our
+                product that could help with our user’s problems, such as
+                feeling anxious during an interview and maintaining positive
+                body language. We created storyboards for each of the
+                features and conducted interviews with users to gain insight
+                on which features seem more valuable to incorporate. The top
+                3 features our users identified with were
+                <b>Speed Dating, User Generated Interviews, and Body
+                    Tracker Bot.</b>
+            </p>
+            <figure>
+                <img src="images/intermingle/sb_v1.webp" id="int-sb1" class="cs-pic" alt="Speed Dating" />
+                <figcaption>Speed Dating</figcaption>
+            </figure>
+            <figure>
+                <img src="images/intermingle/sb_v2.webp" id="int-sb2" class="cs-pic" alt="User Generated Interviews" />
+                <figcaption>User Generated Interviews</figcaption>
+            </figure>
+            <figure>
+                <img src="images/intermingle/sb_v3.webp" id="int-sb3" class="cs-pic" alt="Body Tracker Bot" />
+                <figcaption>Body Tracker Bot</figcaption>
+            </figure>
+            <h2 class="section-subheader">Initial Idea and Pivot</h2>
+            <p>
+                Our initial product idea focused on the idea of
+                speed-dating, where interviewees can meet with each other
+                and practice common interview questions that we provide.
+                However, we received feedback that there were already
+                pre-existing services similar to this idea, such as “Pramp”.
+                We pivoted the main feature of our product to allowing
+                interviewees to hire professionals to help them with their
+                interviews. Although hiring professionals/tutors isn’t an
+                entirely new concept, our product differs as it’s more
+                <b>focused on interview preparation </b>
+                rather than general subject areas, and it helps interviewees
+                prepare for
+                <b>specific</b> interviews for companies.
+            </p>
+            <br />
+            <h2 class="section-subheader">Competitive Analysis</h2>
+            <p>
+                Our initial competitive analysis compared various interview
+                preparation websites. After our pivot, we started comparing
+                similar websites that allow users to hire professionals.
+            </p>
+            <figure>
+                <img src="images/intermingle/comp_anal_v1.webp" id="int-comp1" class="cs-pic"
+                    alt="Competitive Analysis Version 1" />
+                <figcaption>Competitive Analysis Version 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/intermingle/comp_anal_v2.webp" id="int-comp2" class="cs-pic"
+                    alt="Competitive Analysis Version 2" />
+                <figcaption>Competitive Analysis Version 2</figcaption>
+            </figure>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Design</h1>
+            <h2 class="section-subheader">Low-Fidelity Prototype</h2>
+            <h3 class="section-subsubheader">Initial Iterations</h3>
+            <p>
+                We focused on implementing the basic structure of our
+                website, which included sign-up pages, home pages, reviews,
+                and scheduling interviews.
+            </p>
+            <iframe title="Lofi Prototype First Iteration" style="border: 1px solid rgba(0, 0, 0, 0.1)" width="100%"
+                height="800"
+                src="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=256%3A2&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=256%3A2&show-proto-sidebar=1"
+                allowfullscreen></iframe>
+            <p>
+                We conducted user testing to identify any improvements we
+                could make. Our users provided us with an extensive list of
+                feedback, the most notable ones being a way to
+                <b>message past interviewees</b>
+                so they can discuss their experience with an interviewer,
+                interviewers should be able to
+                <b>set different rates for different services</b>,
+                <b>simplifying analytics</b>
+                to only important information, and
+                <b>giving the user a way to specify which services they
+                    want from the interviewer</b>.
+            </p>
+            <h3 class="section-subsubheader">Final Iteration</h3>
+            <p>
+                We took our user's suggestions and incorporated them into
+                our final lofi.
+            </p>
+            <br />
+            <p>
+                We included a
+                <b>message button</b> and <b>service tag</b> on reviews.
+            </p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/intermingle/reviews_msg_before.webp" id="int-rev1" class="cs-pic"
+                        alt="Reviews Before" />
+                    <figcaption>Reviews Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/intermingle/reviews_msg_after.webp" id="int-rev2" class="cs-pic"
+                        alt="Reviews After" />
+                    <figcaption>Reviews After</figcaption>
+                </figure>
+            </div>
+            <p>
+                We allowed interviewers to
+                <b>set different rates for different services</b>.
+            </p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/intermingle/set_wage_before.webp" id="int-wage1" class="cs-pic"
+                        alt="Set Wage Before" />
+                    <figcaption>Set Wage Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/intermingle/set_wage_after.webp" id="int-wage2" class="cs-pic"
+                        alt="Set Wage After" />
+                    <figcaption>Set Wage After</figcaption>
+                </figure>
+            </div>
+            <p>
+                We
+                <b>simplified the analytics</b>
+                for interviewers.
+            </p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/intermingle/analytics_before.webp" id="int-anal1" class="cs-pic"
+                        alt="Analytics Before" />
+                    <figcaption>Analytics Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/intermingle/analytics_after.webp" id="int-anal2" class="cs-pic"
+                        alt="Analytics After" />
+                    <figcaption>Analytics After</figcaption>
+                </figure>
+            </div>
+            <p>
+                We added <b>services</b> when booking a session with an
+                interviewer.
+            </p>
+            <div class="cs-flex-container">
+                <figure>
+                    <img src="images/intermingle/serv_before.webp" id="int-serv1" class="cs-pic"
+                        alt="Booking Session Before" />
+                    <figcaption>Booking Session Before</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/intermingle/serv_after.webp" id="int-serv2" class="cs-pic"
+                        alt="Booking Session After" />
+                    <figcaption>Booking Session After</figcaption>
+                </figure>
+            </div>
+            <iframe title="Lofi Prototype Final Iteration" style="border: 1px solid rgba(0, 0, 0, 0.1)" width="100%"
+                height="800"
+                src="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=459%3A81&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=459%3A81&show-proto-sidebar=1"
+                allowfullscreen></iframe>
+            <h2 class="section-subheader">Moodboard/Style Guide</h2>
+            <p>
+                As a service that will be used to help people prepare for
+                interviews, we wanted our app to convey certain adjectives
+                such as trustworthy, confidence, professional, and
+                opportunity.
+            </p>
+            <figure>
+                <img src="images/intermingle/moodboard.webp" id="int-moodboard" class="cs-pic" alt="Moodboard" />
+                <figcaption>Moodboard</figcaption>
+            </figure>
+            <p>
+                For our fonts, we used
+                <b>Montserrat</b> for both the headers and body text, as it
+                offers a <b>sophisticated and modern look</b>. For our
+                colors, we utilized
+                <b>bright blue to make elements pop</b>
+                while combining it with
+                <b>black and white for a reserved, modern look</b>. For our
+                logo, we underwent many design ideas and had various visuals
+                we wanted to incorporate such as chat bubbles, ties, and
+                grad caps . However, we ended up using a
+                <b>simple, reserved logo</b>
+                to fit a more
+                <b>professional theme</b>.
+            </p>
+            <figure>
+                <img src="images/intermingle/style_guide.webp" id="int-styleguide" class="cs-pic" alt="Style Guide" />
+                <figcaption>Style Guide</figcaption>
+            </figure>
+            <h2 class="section-subheader">High-Fidelity Prototype</h2>
+            <p>
+                We incorporated our style guide into our lofi to create our
+                hifi.
+            </p>
+            <iframe title="Hifi Prototype" style="border: 1px solid rgba(0, 0, 0, 0.1)" width="100%" height="800"
+                src="https://www.figma.com/proto/KwZDIUaxBUgg9RacaSRZV5/COGS-122?page-id=18%3A2&node-id=529%3A120&viewport=4362%2C-7056%2C0.22&scaling=scale-down&starting-point-node-id=529%3A120&show-proto-sidebar=1"
+                allowfullscreen></iframe>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Kickstarter</h1>
+            <p>
+                We created a
+                <a href="https://www.kickstarter.com/projects/intermingle/1455805503?ref=4yjcmb&token=1652e6f7"
+                    class="case-study-links" target="_blank"><u>Kickstarter</u></a>
+                page that can be used to pitch our idea to potential
+                investors. This involved stating how our service works for
+                interviewers and interviewees and creating crowdfunding
+                rewards for our backers.
+            </p>
+            <figure>
+                <img src="images/intermingle/rewards.webp" id="int-rewards" class="cs-pic" alt="Rewards" />
+                <figcaption>Rewards</figcaption>
+            </figure>
+            <figure>
+                <!-- <img src="images/intermingle/kickstart_scroll.gif" id="int-scroll" class="cs-pic" alt="Campaign" /> -->
+                <video width="100%" autoplay loop>
+                    <source src="images/intermingle/kickstart_scroll.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Campaign</figcaption>
+            </figure>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">7-month Budget</h1>
+            <p>
+                We calculated a budget plan that detailed our expenses,
+                projected interview growth each month, revenue, and total
+                net profit to see how feasable our business model was.
+            </p>
+            <br />
+            <ul id="cs-ul">
+                <li>
+                    <b>Expenses: </b>The majority of it will come from
+                    design/development team and CEO/CTO salaries. We also
+                    accounted for website maintenance and marketing, as well
+                    as initial business expenses such as legal fees and
+                    insurance.
+                </li>
+                <img src="images/intermingle/expenses1.webp" id="int-expenses1" class="cs-pic"
+                    alt="Expenses Pie Chart Breakdown" />
+                <img src="images/intermingle/expenses2.webp" id="int-expenses2" class="cs-pic"
+                    alt="Expenses Spread Sheet Breakdown" />
+                <li>
+                    <b>Interview Growth: </b>We estimated we'll intially
+                    start with around 500 interviews. We predict that the
+                    number of interviews will grow by around 60 every month.
+                    By the end of the 7 months, we should have a total of
+                    860 interviews.
+                </li>
+                <img src="images/intermingle/interview_growth.webp" id="int-growth" class="cs-pic"
+                    alt="Interview Growth" />
+                <li>
+                    <b>Revenue: </b>We’ll be collecting a 20% service fee
+                    from each interview. We estimate that users will pay
+                    around $50 per interview with an average of 1.5 hours
+                    per interview. Based on our interview growth of +60
+                    every month, we’ll be making $900 dollars every month.
+                </li>
+                <img src="images/intermingle/revenue.webp" id="int-revenue" class="cs-pic" alt="Revenue" />
+                <li>
+                    <b>Net Profit: </b>
+                    By taking the total revenue and subtracting it by the
+                    total expenses, we'll be in the negative for the first 6
+                    months, but become positive by our 7th month.
+                </li>
+                <img src="images/intermingle/net_profit_1.webp" id="int-netprofit1" class="cs-pic"
+                    alt="Net Profit Line Chart" />
+                <img src="images/intermingle/net_profit_2.webp" id="int-netprofit2" class="cs-pic"
+                    alt="Net Profit Spread Sheet" />
+            </ul>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Video Pitch</h1>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/TOeDUlC84Qw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="section-container">
+            <h1 class="section-header">Results</h1>
+            <p>
+                Our pitch was well received by fellow classmates and
+                professors. They found the idea of consulting with
+                professionals with experience to specific interviews to be
+                unique and helps address the difficulties associated with
+                interview preparation.
+            </p>
+            <br />
+            <p>
+                Our team was ranked
+                <b>#2</b> out of 11 teams based on peer evaluation.
+            </p>
+            <br />
+        </div>
+
+        <div class="section-container">
+            <h1 class="section-header">Next Steps</h1>
+            <p>
+                If we were to continue working on this project, we would
+                work on:
+            </p>
+            <br />
+            <ul id="cs-ul">
+                <li>
+                    Conducting further user testing on hi-fi prototypes to
+                    refine design and adjust features.
+                </li>
+                <li>Improve budget plans to reflect more accurately.</li>
+                <li>Market the product to raise funds via Kickstarter.</li>
+            </ul>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-flex-container">
+                <div class="close">&times;</div>
+                <div>
+                    <img class="modal-content" id="img01" />
+                    <div id="caption"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- FOOTER-->
-        <section id="footer">
-            <div class="footer-main">
-                <div class="logos">
-                    <a href="https://github.com/kpham841" target="_blank">
-                        <i class="bx bxs-like bx-lg"></i>
-                        <box-icon
-                            type="logo"
-                            name="github"
-                            color="white"
-                            size="30px"
-                        ></box-icon>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/kpham841/"
-                        target="_blank"
-                    >
-                        <box-icon
-                            name="linkedin-square"
-                            type="logo"
-                            color="white"
-                            size="30px"
-                        ></box-icon>
-                    </a>
-                    <a href="https://devpost.com/khiempham841" target="_blank">
-                        <img
-                            src="images/icons/devpost.png"
-                            alt="Devpost"
-                            width="30px"
-                            height="30px"
-                        />
-                    </a>
-                </div>
-                <div class="caption">
-                    <p>Designed & Built by Khiem Pham</p>
-                </div>
+    <!-- FOOTER-->
+    <section id="footer">
+        <div class="footer-main">
+            <div class="logos">
+                <a href="https://github.com/kpham841" target="_blank" aria-label="GitHub">
+                    <box-icon type='logo' name='github' color='white' size='30px'></box-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/kpham841/" target="_blank" aria-label="LinkedIn">
+                    <box-icon type='logo' name='linkedin-square' color='white' size='30px'></box-icon>
+                </a>
+                <a href="https://devpost.com/khiempham841" target="_blank" aria-label="Devpost">
+                    <img src="images/icons/devpost.png" alt="Devpost" width="30px" height="30px">
+                </a>
             </div>
-        </section>
+            <div class="caption">
+                <p>Designed & Built by Khiem Pham</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- SCROLL REVEAL -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <script>
-            // Modal
-            // create references to the modal...
-            let modal2 = document.getElementById('myModal')
-            // the image in the modal
-            let modalImg2 = document.getElementById('img01')
-            // and the caption in the modal
-            let captionText2 = document.getElementById('caption')
-            // small images
-            let imgsSmall = document.getElementsByClassName('cs-pic-smaller')
+    <script>
+        // Modal
+        // create references to the modal...
+        let modal2 = document.getElementById('myModal')
+        // the image in the modal
+        let modalImg2 = document.getElementById('img01')
+        // and the caption in the modal
+        let captionText2 = document.getElementById('caption')
+        // small images
+        let imgsSmall = document.getElementsByClassName('cs-pic-smaller')
 
-            console.log(imgsSmall)
-            for (let j = 0; j < imgsSmall.length; j++) {
-                let img = imgsSmall[j]
-                img.onclick = function (e) {
-                    console.log('click')
-                    modal2.style.display = 'block'
-                    modalImg2.src = this.src
-                    captionText2.innerHTML = this.alt
-                }
+        console.log(imgsSmall)
+        for (let j = 0; j < imgsSmall.length; j++) {
+            let img = imgsSmall[j]
+            img.onclick = function (e) {
+                console.log('click')
+                modal2.style.display = 'block'
+                modalImg2.src = this.src
+                captionText2.innerHTML = this.alt
             }
-            let span2 = document.getElementsByClassName('close')[0]
+        }
+        let span2 = document.getElementsByClassName('close')[0]
 
-            span2.onclick = function () {
-                modal.style.display = 'none'
-            }
-        </script>
+        span2.onclick = function () {
+            modal.style.display = 'none'
+        }
+    </script>
 
-        <!-- JAVASCRIPT -->
-        <script src="main.js"></script>
-    </body>
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+</body>
+
 </html>
