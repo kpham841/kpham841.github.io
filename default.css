@@ -52,7 +52,7 @@ body {
 }
 
 h1 {
-    font-size: 3.5vw;
+    font-size: 70px;
     margin: 0;
 }
 
@@ -1587,12 +1587,12 @@ li:not(:last-child) {
         font-size: 50px;
     }
 
-    .about-main > h1,
+    /* .home-main > h1, .about-main > h1,
     .experience-main > h1,
     .portfolio-main > h1,
     .contact-main > h1 {
         font-size: 40px;
-    }
+    } */
 
     .modal-flex-container {
         flex-direction: column;
