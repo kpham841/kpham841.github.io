@@ -233,7 +233,7 @@ function filterProj() {
         img1.id = 'dog'
         img1.src = 'https://media.tenor.com/_4xCiEhhoZsAAAAM/dog-smile.gif'
         img1.alt = 'dog'
-        img1.style.width = '40%'
+        img1.style.width = '300px'
         img1.style.objectPosition = 'center'
         img1.style.borderRadius = '10px'
         img1.style.margin = '0 auto'
