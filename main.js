@@ -158,7 +158,7 @@ window.addEventListener('scroll', () => {
 })
 
 // When checkbox is unchecked, hide the elements with class "web-dev"
-function filterProj(event) {
+function filterProj() {
     // check if any checkbox is checked
     let checked = document.querySelectorAll('input[type=checkbox]:checked')
     if (checked.length !== 0) {
@@ -177,39 +177,41 @@ function filterProj(event) {
             img1.remove()
         }
 
-        if (event.target.id == 'filter-web') {
-            let webDev = document.querySelectorAll('.proj-webdev')
-            if (event.target.checked) {
-                webDev.forEach((el) => {
-                    el.style.display = 'block'
-                })
-            } else {
-                webDev.forEach((el) => {
-                    el.style.display = 'none'
-                })
-            }
-        } else if (event.target.id == 'filter-uiux') {
-            let uiUx = document.querySelectorAll('.proj-uiux')
-            if (event.target.checked) {
-                uiUx.forEach((el) => {
-                    el.style.display = 'block'
-                })
-            } else {
-                uiUx.forEach((el) => {
-                    el.style.display = 'none'
-                })
-            }
-        } else if (event.target.id == 'filter-other') {
-            let other = document.querySelectorAll('.proj-other')
-            if (event.target.checked) {
-                other.forEach((el) => {
-                    el.style.display = 'block'
-                })
-            } else {
-                other.forEach((el) => {
-                    el.style.display = 'none'
-                })
-            }
+        // check if element is checked
+        let checkWeb = document.getElementById('filter-web')
+        let checkUiux = document.getElementById('filter-uiux')
+        let checkOther = document.getElementById('filter-other')
+
+        let webDev = document.querySelectorAll('.proj-webdev')
+        let uiUx = document.querySelectorAll('.proj-uiux')
+        let other = document.querySelectorAll('.proj-other')
+
+        if (checkWeb.checked) {
+            webDev.forEach((el) => {
+                el.style.display = 'block'
+            })
+        } else {
+            webDev.forEach((el) => {
+                el.style.display = 'none'
+            })
+        }
+        if (checkUiux.checked) {
+            uiUx.forEach((el) => {
+                el.style.display = 'block'
+            })
+        } else {
+            uiUx.forEach((el) => {
+                el.style.display = 'none'
+            })
+        }
+        if (checkOther.checked) {
+            other.forEach((el) => {
+                el.style.display = 'block'
+            })
+        } else {
+            other.forEach((el) => {
+                el.style.display = 'none'
+            })
         }
     } else {
         let projContainer = document.getElementsByClassName(
