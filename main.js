@@ -27,15 +27,15 @@ let modal = document.getElementById('myModal')
 let images = document.getElementsByClassName('cs-pic')
 
 // the image in the modal
-let modalImg = document.getElementById('img101')
+let modalImg = document.getElementById('img01')
 // and the caption in the modal
 let captionText = document.getElementById('caption')
 
 // Go through all of the images with our custom class
 for (let i = 0; i < images.length; i++) {
-    let img1 = images[i]
+    let img = images[i]
     // and attach our click listener for this image.
-    img1.onclick = function (e) {
+    img.onclick = function (e) {
         modal.style.display = 'block'
         modalImg.src = this.src
         captionText.innerHTML = this.alt
@@ -229,20 +229,20 @@ function filterProj() {
         p1.innerHTML = "Congrats, you hid all my projects! Here's a cute dog"
 
         // Insert image element
-        let img1 = document.createElement('img')
-        img1.id = 'dog'
-        img1.src = 'https://media.tenor.com/_4xCiEhhoZsAAAAM/dog-smile.gif'
-        img1.alt = 'dog'
-        img1.style.width = '300px'
-        img1.style.objectPosition = 'center'
-        img1.style.borderRadius = '10px'
-        img1.style.margin = '0 auto'
-        img1.style.display = 'block'
+        let dogImg = document.createElement('img')
+        dogImg.id = 'dog'
+        dogImg.src = 'https://media.tenor.com/_4xCiEhhoZsAAAAM/dog-smile.gif'
+        dogImg.alt = 'dog'
+        dogImg.style.width = '300px'
+        dogImg.style.objectPosition = 'center'
+        dogImg.style.borderRadius = '10px'
+        dogImg.style.margin = '0 auto'
+        dogImg.style.display = 'block'
 
         document.getElementsByClassName('main-containerProj')[1].appendChild(p1)
         document
             .getElementsByClassName('main-containerProj')[1]
-            .appendChild(img1)
+            .appendChild(dogImg)
     }
 }
 
