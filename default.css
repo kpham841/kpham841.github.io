@@ -700,6 +700,24 @@ li {
     text-align: center;
 }
 
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    gap: 2rem; 
+    font-family: var(--header-font);
+    font-size: 30px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: var(--mainColor);
+}
+
 .grid-container-projects {
     display: grid;
     justify-content: center;
@@ -875,7 +893,7 @@ li {
     resize: none;
 }
 
-label {
+.form-group > label {
     color: var(--secondaryColor);
 }
 
@@ -1617,5 +1635,10 @@ li:not(:last-child) {
 
     .section-subsubheader {
         font-size: 25px;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
     }
 }

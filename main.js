@@ -27,15 +27,15 @@ let modal = document.getElementById('myModal')
 let images = document.getElementsByClassName('cs-pic')
 
 // the image in the modal
-let modalImg = document.getElementById('img01')
+let modalImg = document.getElementById('img101')
 // and the caption in the modal
 let captionText = document.getElementById('caption')
 
 // Go through all of the images with our custom class
 for (let i = 0; i < images.length; i++) {
-    let img = images[i]
+    let img1 = images[i]
     // and attach our click listener for this image.
-    img.onclick = function (e) {
+    img1.onclick = function (e) {
         modal.style.display = 'block'
         modalImg.src = this.src
         captionText.innerHTML = this.alt
@@ -156,3 +156,94 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', () => {
     handleScrollAnimation()
 })
+
+// When checkbox is unchecked, hide the elements with class "web-dev"
+function filterProj(event) {
+    // check if any checkbox is checked
+    let checked = document.querySelectorAll('input[type=checkbox]:checked')
+    if (checked.length !== 0) {
+        let projContainer = document.getElementsByClassName(
+            'grid-container-projects'
+        )
+        projContainer[0].style.display = 'grid'
+
+        let p1 = document.querySelector('h3')
+        if (p1) {
+            p1.remove()
+        }
+
+        let img1 = document.getElementById('dog')
+        if (img1) {
+            img1.remove()
+        }
+
+        if (event.target.id == 'filter-web') {
+            let webDev = document.querySelectorAll('.proj-webdev')
+            if (event.target.checked) {
+                webDev.forEach((el) => {
+                    el.style.display = 'block'
+                })
+            } else {
+                webDev.forEach((el) => {
+                    el.style.display = 'none'
+                })
+            }
+        } else if (event.target.id == 'filter-uiux') {
+            let uiUx = document.querySelectorAll('.proj-uiux')
+            if (event.target.checked) {
+                uiUx.forEach((el) => {
+                    el.style.display = 'block'
+                })
+            } else {
+                uiUx.forEach((el) => {
+                    el.style.display = 'none'
+                })
+            }
+        } else if (event.target.id == 'filter-other') {
+            let other = document.querySelectorAll('.proj-other')
+            if (event.target.checked) {
+                other.forEach((el) => {
+                    el.style.display = 'block'
+                })
+            } else {
+                other.forEach((el) => {
+                    el.style.display = 'none'
+                })
+            }
+        }
+    } else {
+        let projContainer = document.getElementsByClassName(
+            'grid-container-projects'
+        )
+        projContainer[0].style.display = 'none'
+
+        // Insert p element
+        let p1 = document.createElement('h3')
+        p1.style.textAlign = 'center'
+        p1.style.color = '#000000'
+        p1.style.fontFamily = 'Montserrat'
+        p1.style.marginTop = '50px'
+        p1.style.marginBottom = '20px'
+        p1.innerHTML = "Congrats, you hid all my projects! Here's a cute dog"
+
+        // Insert image element
+        let img1 = document.createElement('img')
+        img1.id = 'dog'
+        img1.src = 'https://media.tenor.com/_4xCiEhhoZsAAAAM/dog-smile.gif'
+        img1.alt = 'dog'
+        img1.style.width = '40%'
+        img1.style.objectPosition = 'center'
+        img1.style.borderRadius = '10px'
+        img1.style.margin = '0 auto'
+        img1.style.display = 'block'
+
+        document.getElementsByClassName('main-containerProj')[1].appendChild(p1)
+        document
+            .getElementsByClassName('main-containerProj')[1]
+            .appendChild(img1)
+    }
+}
+
+document
+    .querySelectorAll('input[type="checkbox"]')
+    .forEach((el) => el.addEventListener('change', filterProj))
