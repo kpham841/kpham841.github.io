@@ -6,6 +6,32 @@ $(document).ready(function () {
     })
 })
 
+// Footer
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<section id="footer">
+        <div class="footer-main">
+            <div class="logos">
+                <a href="https://github.com/kpham841" target="_blank" aria-label="GitHub">
+                    <box-icon type='logo' name='github' color='white' size='30px'></box-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/kpham841/" target="_blank" aria-label="LinkedIn">
+                    <box-icon type='logo' name='linkedin-square' color='white' size='30px'></box-icon>
+                </a>
+                <a href="mailto:khiempham841@gmail.com" aria-label="Email">
+                    <box-icon type='solid' name='envelope' color='white' size='30px'></box-icon>
+                </a>
+            </div>
+            <div class="caption">
+                <p>Designed & Built by Khiem Pham</p>
+            </div>
+        </div>
+    </section>`;
+  }
+}
+    
+customElements.define('footer-main', Footer);
+
 // Hide navbar when scrolling down
 let prevScrollpos = window.scrollY
 document.onscroll = function () {
