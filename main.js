@@ -21,6 +21,9 @@ class Footer extends HTMLElement {
                 <a href="mailto:khiempham841@gmail.com" aria-label="Email">
                     <box-icon type='solid' name='envelope' color='white' size='30px'></box-icon>
                 </a>
+                <a onclick="alert('Please reach out if you would like to see my resume')" aria-label="Email">
+                    <box-icon type='solid' name='file' color='white' size='30px'></box-icon>
+                </a>
             </div>
             <div class="caption">
                 <p>Designed & Built by Khiem Pham</p>

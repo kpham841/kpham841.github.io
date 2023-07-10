@@ -390,6 +390,16 @@ li {
     font-family: var(--header-font);
 }
 
+.home-sub {
+    font-size: 25px;
+    font-family: var(--p-font);
+    color: var(--secondaryTextW);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
 .home-p {
     color: var(--secondaryTextW);
     font-family: var(--p-font);
@@ -487,11 +497,31 @@ li {
 .intros {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     margin: 0px auto;
     position: relative;
     overflow: hidden;
+}
+
+.logos-intros {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logos-intros > a:first-child {
+    padding-left: 0px;
+}
+
+.logos-intros > a {
+    padding-right: 15px;
+    padding-left: 15px;
+    opacity: 0.6;
+    cursor: pointer;
+}   
+
+.logos-intros > a:hover {
+    opacity: 1;
 }
 
 /*===== ARROW ======*/
@@ -1022,10 +1052,7 @@ input[type='submit']:hover {
     padding-right: 15px;
     padding-left: 15px;
     opacity: 0.6;
-}
-
-.logos > a:hover {
-    opacity: 1;
+    cursor: pointer;
 }
 
 .logos > a:hover {
@@ -1603,6 +1630,10 @@ li:not(:last-child) {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 50px;
+    }
+
+    .home-sub {
+        font-size: 15px;
     }
 
     /* .home-main > h1, .about-main > h1,
