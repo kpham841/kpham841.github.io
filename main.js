@@ -12,10 +12,10 @@ class Footer extends HTMLElement {
     this.innerHTML = `<section id="footer">
         <div class="footer-main">
             <div class="logos">
-                <a href="https://github.com/kpham841" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/kph4m" target="_blank" aria-label="GitHub">
                     <box-icon type='logo' name='github' color='white' size='30px'></box-icon>
                 </a>
-                <a href="https://www.linkedin.com/in/kpham841/" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/khiempham01/" target="_blank" aria-label="LinkedIn">
                     <box-icon type='logo' name='linkedin-square' color='white' size='30px'></box-icon>
                 </a>
                 <a href="mailto:khiempham841@gmail.com" aria-label="Email">
